@@ -1,6 +1,7 @@
 import Logo from '../assets/valheim_logo.png';
 import global from '../assets/svg/global.svg';
 import search from '../assets/svg/search.svg';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   // https://tailwindcomponents.com/component/airbnb-navbar
   return (
@@ -40,21 +41,24 @@ const Navbar = () => {
       <div className="flex-initial">
         <div className="flex justify-end items-center relative">
           <div className="flex mr-4 items-center">
-            <a className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full" href="#">
+            <Link to="/map" className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
               <div className="flex items-center relative cursor-pointer whitespace-nowrap">
                 地圖
               </div>
-            </a>
-            <a className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full" href="#">
+            </Link>
+
+            <Link to="/food" className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
               <div className="flex items-center relative cursor-pointer whitespace-nowrap">
                 食材
               </div>
-            </a>
-            <a className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full" href="#">
+            </Link>
+
+            <Link to="/monster" className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
               <div className="flex items-center relative cursor-pointer whitespace-nowrap">
                 妖怪
               </div>
-            </a>
+            </Link>
+
             <div className="block relative">
               <button
                 type="button"
