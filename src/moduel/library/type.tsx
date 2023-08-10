@@ -1,9 +1,10 @@
+import { GET_FROM } from '@/moduel/common';
+
 export interface SidebarType {
   name: string;
   category: string;
 }
 
-//
 export interface FoodType {
   /** 名稱 */
   name: string;
@@ -24,7 +25,7 @@ export interface FoodType {
   maxCount: number;
 
   /** 獲取方式 */
-  get: number;
+  get: number | keyof typeof GET_FROM;
 
   /** 圖片 */
   photo: string;

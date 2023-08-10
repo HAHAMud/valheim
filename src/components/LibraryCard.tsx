@@ -41,8 +41,7 @@ const Card = ({ item }: { item: FoodType }) => {
             <span
               className={`text-teal-500 block bg-white rounded-full text-xs font-bold px-3 py-2 leading-none flex items-center`}
             >
-              {/* FIX: type error */}
-              {GET_FROM[item.get]}
+              {GET_FROM[item.get as keyof typeof GET_FROM]}
             </span>
           )}
         </div>
