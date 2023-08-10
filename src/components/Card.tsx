@@ -1,5 +1,4 @@
 import { AreaItemsType } from '@/moduel/area/type';
-import photo from '@/assets/area/mountains.webp';
 
 const Card = ({ mainColor, item }: { mainColor: string; item: AreaItemsType }) => {
   return (
