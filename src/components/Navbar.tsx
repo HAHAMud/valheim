@@ -15,7 +15,7 @@ const NavItem = ({ href, name }: { href: string; name: string }) => {
 
 const Navbar = () => {
   return (
-    <nav className=" bg-white w-full flex top-0 fixed justify-between items-center mx-auto px-8 h-20">
+    <nav className=" bg-white w-full flex top-0 fixed justify-between items-center mx-auto px-8 h-20 z-10">
       {/* <!-- logo --> */}
       <div className="inline-flex">
         <a className="_o6689fn" href="/">
