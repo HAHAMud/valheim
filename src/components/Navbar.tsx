@@ -2,8 +2,18 @@ import { Link } from 'react-router-dom';
 import Logo from '@/assets/valheim_logo.png';
 import global from '@/assets/svg/global.svg';
 import search from '@/assets/svg/search.svg';
+import { navbarItems } from '@/moduel/navbar';
+import { NavbarItemsType } from '@/moduel/navbar/type';
+
+const NavItem = ({ href, name }: { href: string; name: string }) => {
+  return (
+    <Link to={href} className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
+      <div className="flex items-center relative cursor-pointer whitespace-nowrap">{name}</div>
+    </Link>
+  );
+};
+
 const Navbar = () => {
-  // https://tailwindcomponents.com/component/airbnb-navbar
   return (
     <nav className=" bg-white w-full flex top-0 fixed justify-between items-center mx-auto px-8 h-20">
       {/* <!-- logo --> */}
@@ -41,23 +51,9 @@ const Navbar = () => {
       <div className="flex-initial">
         <div className="flex justify-end items-center relative">
           <div className="flex mr-4 items-center">
-            <Link to="/map" className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
-              <div className="flex items-center relative cursor-pointer whitespace-nowrap">
-                地圖
-              </div>
-            </Link>
-
-            <Link to="/food" className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
-              <div className="flex items-center relative cursor-pointer whitespace-nowrap">
-                食材
-              </div>
-            </Link>
-
-            <Link to="/monster" className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
-              <div className="flex items-center relative cursor-pointer whitespace-nowrap">
-                妖怪
-              </div>
-            </Link>
+            {navbarItems.map((item: NavbarItemsType) => (
+              <NavItem key={item.path} href={item.path} name={item.title} />
+            ))}
 
             <div className="block relative">
               <button
