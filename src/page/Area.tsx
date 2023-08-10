@@ -7,7 +7,7 @@ const Area = () => {
     <div>
       <div className="p-24 flex flex-wrap items-center justify-start">
         {areaItems.map((area: AreaItemsType) => (
-          <Card key={area.name} item={area} mainColor={'teal'} />
+          <Card key={area.name} item={area} />
         ))}
       </div>
     </div>

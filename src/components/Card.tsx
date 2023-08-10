@@ -1,9 +1,9 @@
 import { AreaItemsType } from '@/moduel/area/type';
 
-const Card = ({ mainColor, item }: { mainColor: string; item: AreaItemsType }) => {
+const Card = ({ item }: { item: AreaItemsType }) => {
   return (
     <div
-      className={`bg-${mainColor}-500 flex-shrink-0 m-6 relative overflow-hidden  rounded-lg max-w-xs shadow-lg`}
+      className={`bg-teal-500 flex-shrink-0 m-6 relative overflow-hidden  rounded-lg max-w-xs shadow-lg`}
     >
       <svg
         className="absolute bottom-0 left-0 mb-8 scale-x-150 opacity-10"
@@ -37,7 +37,7 @@ const Card = ({ mainColor, item }: { mainColor: string; item: AreaItemsType }) =
         <div className="flex justify-between">
           <span className="block font-semibold text-xl">{item.name}</span>
           <span
-            className={`text-${mainColor}-500 block bg-white rounded-full text-xs font-bold px-3 py-2 leading-none flex items-center`}
+            className={`text-teal-500 block bg-white rounded-full text-xs font-bold px-3 py-2 leading-none flex items-center`}
           >
             $36.00
           </span>
