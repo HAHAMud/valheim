@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import Logo from '../assets/valheim_logo.png';
-import global from '../assets/svg/global.svg';
-import search from '../assets/svg/search.svg';
-import { navbarItems } from '../moduel/navbar';
-import { NavbarItemsType } from '../moduel/navbar/type';
+import Logo from '@/assets/valheim_logo.png';
+import global from '@/assets/svg/global.svg';
+import search from '@/assets/svg/search.svg';
+import { navbarItems } from '@/moduel/navbar';
+import { NavbarItemsType } from '@/moduel/navbar/type';
 
 const NavItem = ({ href, name }: { href: string; name: string }) => {
   return (
