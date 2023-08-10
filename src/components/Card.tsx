@@ -36,11 +36,13 @@ const Card = ({ item }: { item: AreaItemsType }) => {
         <span className="block opacity-75 -mb-1">{item.slug}</span>
         <div className="flex justify-between">
           <span className="block font-semibold text-xl">{item.name}</span>
-          <span
-            className={`text-teal-500 block bg-white rounded-full text-xs font-bold px-3 py-2 leading-none flex items-center`}
-          >
-            $36.00
-          </span>
+          {item.boss && (
+            <span
+              className={`text-teal-500 block bg-white rounded-full text-xs font-bold px-3 py-2 leading-none flex items-center`}
+            >
+              {item.boss}
+            </span>
+          )}
         </div>
       </div>
     </div>
