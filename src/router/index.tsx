@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '@/App';
-import Area from '@/page/Area';
+import { Area, Library } from '@/page';
 
 export const router = createBrowserRouter([
   {
@@ -12,8 +12,8 @@ export const router = createBrowserRouter([
         element: <Area />,
       },
       {
-        path: '/food',
-        element: <div>Food</div>,
+        path: '/library',
+        element: <Library />,
       },
       {
         path: '/monster',
