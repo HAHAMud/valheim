@@ -3,7 +3,7 @@ import { NavbarItemsType } from './type';
 export const navbarItems: NavbarItemsType[] = [
   {
     title: '地圖',
-    path: '/map',
+    path: '/area',
   },
   {
     title: '食材',
