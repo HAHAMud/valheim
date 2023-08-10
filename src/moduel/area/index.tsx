@@ -6,7 +6,7 @@ import mislands from '@/assets/area/mislands.webp';
 import swamp from '@/assets/area/swamp.webp';
 import mountains from '@/assets/area/mountains.webp';
 import deepNorth from '@/assets/area/deep-north.webp';
-import greenPlainsBoss from '@/assets/area/greenPlains/boss.jpeg';
+import greenPlainsBoss from '@/assets/greenPlains/boss.jpeg';
 
 export const areaItems: AreaItemsType[] = [
   {
