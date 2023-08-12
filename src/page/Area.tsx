@@ -1,5 +1,4 @@
-import { Card } from '@/components/Card/Card';
-import { CardList } from '@/components/Card/CardList';
+import { Card, CardList } from '@/components/Card';
 import { areaItems } from '@/module/area';
 import { AreaItemsType } from '@/module/area/type';
 

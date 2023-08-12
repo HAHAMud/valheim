@@ -1,2 +1,2 @@
-export * from './AreaCard';
-export * from './ItemCard';
+export * from './Card';
+export * from './CardList';
