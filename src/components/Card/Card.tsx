@@ -19,9 +19,7 @@ export function Card({ photo, slug, title, extra }: Props) {
         <div className="flex justify-between">
           <span className="block text-xl font-semibold">{title}</span>
           {extra && (
-            <span
-              className={`flex items-center rounded-full bg-white px-3 py-2 text-xs font-bold leading-none text-teal-500`}
-            >
+            <span className="flex items-center rounded-full bg-white px-3 py-2 text-xs font-bold leading-none text-teal-500">
               {extra}
             </span>
           )}

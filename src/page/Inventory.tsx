@@ -11,7 +11,7 @@ export const Inventory = () => {
       <Category />
 
       <CardList>
-        {BERRIES.map(({ name, photo, maxCount, obtainMethods }) => (
+        {BERRIES.map(({ name, photo, stack: maxCount, obtainMethods }) => (
           <Card
             key={name}
             title={name}
