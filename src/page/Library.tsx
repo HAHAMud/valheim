@@ -1,6 +1,6 @@
-import LibraryCard from '@/components/LibraryCard';
-import Sidebar from '@/components/Sidebar';
-import { Berries } from '@/moduel/library';
+import { Sidebar } from '@/components/Sidebar';
+import { ItemCard } from '@/components/Card';
+import { Berries } from '@/module/item/constants';
 
 const Library = () => {
   // TODO: filter by category
@@ -8,7 +8,7 @@ const Library = () => {
   return (
     <div>
       <Sidebar />
-      <LibraryCard list={Berries} />
+      <ItemCard list={Berries} />
     </div>
   );
 };

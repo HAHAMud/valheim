@@ -1,18 +1,16 @@
-import { LibrarySidebar } from '@/moduel/library';
-import { SidebarType } from '@/moduel/library/type';
+import { LibrarySidebar } from '@/module/item/constants';
+import { SidebarType } from '@/module/item/types';
 
 const SidebarItem = ({ item }: { item: SidebarType }) => {
-  return <div className="m-2 p-2 rounded-lg bg-white text-teal-500">{item.name}</div>;
+  return <div className="m-2 rounded-lg bg-white p-2 text-teal-500">{item.name}</div>;
 };
 
-const Sidebar = () => {
+export const Sidebar = () => {
   return (
-    <div className="p-24 flex flex-wrap items-center justify-start">
+    <div className="flex flex-wrap items-center justify-start p-24">
       {LibrarySidebar.map((item: SidebarType, index: number) => (
         <SidebarItem key={index} item={item} />
       ))}
     </div>
   );
 };
-
-export default Sidebar;

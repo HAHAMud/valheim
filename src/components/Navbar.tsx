@@ -3,25 +3,25 @@ import { Link, useLocation } from 'react-router-dom';
 import Logo from '@/assets/valheim_logo.png';
 import global from '@/assets/svg/global.svg';
 import search from '@/assets/svg/search.svg';
-import { navbarItems } from '@/moduel/navbar';
-import { NavbarItemsType } from '@/moduel/navbar/type';
+import { navbarItems } from '@/module/navbar';
+import { NavbarItemsType } from '@/module/navbar/type';
 
 const NavItem = ({ navItem, isActive }: { navItem: NavbarItemsType; isActive: boolean }) => {
   return (
     <Link
       to={navItem.path}
-      className={`inline-block py-2 px-3 hover:bg-gray-200 rounded-full first:${
+      className={`inline-block rounded-full px-3 py-2 hover:bg-gray-200 first:${
         isActive && 'bg-red-200'
       }`}
     >
-      <div className="flex items-center relative cursor-pointer whitespace-nowrap">
+      <div className="relative flex cursor-pointer items-center whitespace-nowrap">
         {navItem.title}
       </div>
     </Link>
   );
 };
 
-const Navbar = () => {
+export const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('/');
   const location = useLocation();
 
@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className=" bg-white w-full flex top-0 fixed justify-between items-center mx-auto px-8 h-20 z-10">
+    <nav className=" fixed top-0 z-10 mx-auto flex h-20 w-full items-center justify-between bg-white px-8">
       {/* <!-- logo --> */}
       <div className="inline-flex">
         <a className="_o6689fn" href="/">
@@ -44,17 +44,17 @@ const Navbar = () => {
       </div>
 
       {/* search bar  */}
-      <div className="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
+      <div className="hidden flex-shrink flex-grow-0 justify-start px-2 sm:block">
         <div className="inline-block">
-          <div className="inline-flex items-center max-w-full">
+          <div className="inline-flex max-w-full items-center">
             <button
-              className="flex items-center flex-grow-0 flex-shrink pl-2 relative w-60 border rounded-full px-1  py-1"
+              className="relative flex w-60 flex-shrink flex-grow-0 items-center rounded-full border px-1 py-1  pl-2"
               type="button"
             >
-              <div className="block flex-grow flex-shrink overflow-hidden text-gray-400">
+              <div className="block flex-shrink flex-grow overflow-hidden text-gray-400">
                 Start your search
               </div>
-              <div className="flex items-center justify-center relative  h-8 w-8 rounded-full">
+              <div className="relative flex h-8 w-8  items-center justify-center rounded-full">
                 <img src={search} alt="search" className="h-4 w-4" />
               </div>
             </button>
@@ -64,18 +64,18 @@ const Navbar = () => {
 
       {/* menu */}
       <div className="flex-initial">
-        <div className="flex justify-end items-center relative">
-          <div className="flex mr-4 items-center">
+        <div className="relative flex items-center justify-end">
+          <div className="mr-4 flex items-center">
             {navbarItems.map((item: NavbarItemsType) => (
               <NavItem key={item.path} navItem={item} isActive={item.path === activeItem} />
             ))}
 
-            <div className="block relative">
+            <div className="relative block">
               <button
                 type="button"
-                className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative "
+                className="relative inline-block rounded-full px-3 py-2 hover:bg-gray-200 "
               >
-                <div className="flex items-center h-5">
+                <div className="flex h-5 items-center">
                   <div className="_xpkakx">
                     <img src={global} alt="global" className="h-4 w-4" />
                   </div>
@@ -88,5 +88,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;
