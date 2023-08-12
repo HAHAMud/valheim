@@ -1,4 +1,4 @@
-import { FoodType, Category } from './types';
+import { CategoryType, FoodType } from './types';
 import raspberry from '@/assets/library/food/raspberry.png';
 import blueberry from '@/assets/library/food/blueberry.png';
 import cloudberry from '@/assets/library/food/cloudberry.png';
@@ -6,7 +6,7 @@ import mushroom from '@/assets/library/food/Mushroom.png';
 import yellowMushroom from '@/assets/library/food/Yellow Mushroom.png';
 import blueMushroom from '@/assets/library/food/Blue Mushroom.png';
 
-export const CATEGORIES: Category[] = [
+export const CATEGORIES: CategoryType[] = [
   {
     name: '莓果',
     category: 'berries',
