@@ -11,7 +11,7 @@ export function Card({ photo, slug, title, extra }: Props) {
       </div>
 
       <div className="relative flex items-center justify-center px-10 pt-10">
-        <img className="relative w-full" src={`/public/${photo}`} alt="" />
+        <img className="relative w-full" src={`${photo}`} alt="" />
       </div>
 
       <div className="relative mt-6 px-6 pb-6 text-white">
