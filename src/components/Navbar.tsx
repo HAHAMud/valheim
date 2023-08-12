@@ -76,9 +76,7 @@ export const Navbar = () => {
                 className="relative inline-block rounded-full px-3 py-2 hover:bg-gray-200 "
               >
                 <div className="flex h-5 items-center">
-                  <div className="_xpkakx">
-                    <img src={global} alt="global" className="h-4 w-4" />
-                  </div>
+                  <img src={global} alt="global" className="h-4 w-4" />
                 </div>
               </button>
             </div>

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '@/App';
-import { Area, Library } from '@/page';
+import { Area, Inventory } from '@/page';
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/library',
-        element: <Library />,
+        element: <Inventory />,
       },
       {
         path: '/monster',

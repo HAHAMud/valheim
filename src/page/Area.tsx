@@ -1,17 +1,14 @@
-import { AreaCard } from '@/components/Card';
+import { Card } from '@/components/Card/Card';
+import { CardList } from '@/components/Card/CardList';
 import { areaItems } from '@/module/area';
 import { AreaItemsType } from '@/module/area/type';
 
-const Area = () => {
+export const Area = () => {
   return (
-    <div>
-      <div className="flex flex-wrap items-center justify-start p-24">
-        {areaItems.map((area: AreaItemsType) => (
-          <AreaCard key={area.name} item={area} />
-        ))}
-      </div>
-    </div>
+    <CardList>
+      {areaItems.map(({ name, ...restArea }: AreaItemsType) => (
+        <Card key={name} title={name} {...restArea} />
+      ))}
+    </CardList>
   );
 };
-
-export default Area;

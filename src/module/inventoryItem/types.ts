@@ -1,4 +1,4 @@
-export interface SidebarType {
+export interface CategoryType {
   name: string;
   category: string;
 }

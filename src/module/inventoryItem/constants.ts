@@ -1,4 +1,4 @@
-import { FoodType, SidebarType } from './types';
+import { FoodType, Category } from './types';
 import raspberry from '@/assets/library/food/raspberry.png';
 import blueberry from '@/assets/library/food/blueberry.png';
 import cloudberry from '@/assets/library/food/cloudberry.png';
@@ -6,7 +6,7 @@ import mushroom from '@/assets/library/food/Mushroom.png';
 import yellowMushroom from '@/assets/library/food/Yellow Mushroom.png';
 import blueMushroom from '@/assets/library/food/Blue Mushroom.png';
 
-export const LibrarySidebar: SidebarType[] = [
+export const CATEGORIES: Category[] = [
   {
     name: '莓果',
     category: 'berries',
@@ -18,7 +18,7 @@ export const LibrarySidebar: SidebarType[] = [
 ];
 
 // https://www.3dmgame.com/gl/3827513_27.html
-export const Berries: FoodType[] = [
+export const BERRIES: FoodType[] = [
   {
     name: '覆盆子',
     life: 10,
