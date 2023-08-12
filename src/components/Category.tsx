@@ -1,5 +1,5 @@
-import { CATEGORIES } from '@/module/inventoryItem/constants';
-import { CategoryType } from '@/module/inventoryItem/types';
+import { CATEGORIES } from '@/module/inventory/constants';
+import { CategoryType } from '@/module/inventory/types';
 
 export const Category = () => {
   return (
