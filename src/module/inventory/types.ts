@@ -22,12 +22,15 @@ export interface FoodType {
   /** 恢復時間 */
   duration: number;
 
-  /** 最大數量 */
-  maxCount: number;
+  /** 最大堆疊數量 */
+  stack: number;
 
   /** 獲取方式 */
   obtainMethods: ObtainMethod[];
 
   /** 圖片 */
   photo: string;
+
+  /** 用途 */
+  usage: string;
 }
