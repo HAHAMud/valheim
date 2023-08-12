@@ -4,7 +4,10 @@ export interface CategoryType {
 }
 
 const obtainMethods = ['collect', 'killBoss', 'killMob', 'fish', 'cook', 'unknown'] as const;
+const processedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
+
 export type ObtainMethod = (typeof obtainMethods)[number];
+export type ProcessedBy = (typeof processedBy)[number];
 
 export interface FoodType {
   /** 名稱 */
@@ -33,4 +36,7 @@ export interface FoodType {
 
   /** 用途 */
   usage: string;
+
+  /** 加工方式 */
+  processedBy?: ProcessedBy;
 }

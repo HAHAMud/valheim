@@ -1,0 +1,74 @@
+[
+  {
+    "name": "烤肉",
+    "life": 40,
+    "endurance": 30,
+    "healing": 2,
+    "duration": 1200,
+    "stack": 20,
+    "obtainMethods": ["cook"],
+    "photo": "Cooked Meat",
+    "usage": "",
+    "processedBy": ["barbecue grill"]
+  },
+  {
+    "name": "蜥蜴腿烤肉",
+    "life": 35,
+    "endurance": 20,
+    "healing": 2,
+    "duration": 1000,
+    "stack": 20,
+    "obtainMethods": ["cook"],
+    "photo": "Grilled Neck Tail",
+    "usage": "",
+    "processedBy": ["barbecue grill"]
+  },
+  {
+    "name": "香腸",
+    "life": 60,
+    "endurance": 40,
+    "healing": 2,
+    "duration": 1600,
+    "stack": 20,
+    "obtainMethods": ["cook"],
+    "photo": "Sausages",
+    "usage": "",
+    "processedBy": ["cast iron pan"]
+  },
+  {
+    "name": "烤魚",
+    "life": 45,
+    "endurance": 25,
+    "healing": 2,
+    "duration": 1200,
+    "stack": 20,
+    "obtainMethods": ["cook"],
+    "photo": "Cooked Fish",
+    "usage": "",
+    "processedBy": ["barbecue grill"]
+  },
+  {
+    "name": "烤蛇肉",
+    "life": 70,
+    "endurance": 40,
+    "healing": 2,
+    "duration": 2000,
+    "stack": 50,
+    "obtainMethods": ["cook"],
+    "photo": "Cooked Serpent Meat",
+    "usage": "",
+    "processedBy": ["barbecue grill"]
+  },
+  {
+    "name": "熟平原犛牛肉",
+    "life": 50,
+    "endurance": 16,
+    "healing": 4,
+    "duration": 1200,
+    "stack": 50,
+    "obtainMethods": ["cook"],
+    "photo": "Cooked Serpent Meat",
+    "usage": "",
+    "processedBy": ["barbecue grill"]
+  }
+]
