@@ -10,11 +10,11 @@ const NavItem = ({ navItem, isActive }: { navItem: NavbarItemsType; isActive: bo
   return (
     <Link
       to={navItem.path}
-      className={`inline-block rounded-full px-3 py-2 hover:bg-gray-200 first:${
+      className={`inline-block rounded-lg px-3 py-2 hover:bg-teal-300 first:${
         isActive && 'bg-red-200'
       }`}
     >
-      <div className="relative flex cursor-pointer items-center whitespace-nowrap">
+      <div className="relative flex cursor-pointer  items-center whitespace-nowrap text-teal-500 hover:text-white">
         {navItem.title}
       </div>
     </Link>
