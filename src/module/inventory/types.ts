@@ -1,6 +1,8 @@
+export type Category = 'berries' | 'mushrooms' | 'cooked';
+
 export interface CategoryType {
   name: string;
-  category: string;
+  category: Category;
 }
 
 const obtainMethods = ['collect', 'killBoss', 'killMob', 'fish', 'cook', 'unknown'] as const;
@@ -9,7 +11,7 @@ const processedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
 export type ObtainMethod = (typeof obtainMethods)[number];
 export type ProcessedBy = (typeof processedBy)[number];
 
-export interface FoodType {
+export interface InventoryItem {
   /** 名稱 */
   name: string;
 
@@ -39,4 +41,6 @@ export interface FoodType {
 
   /** 加工方式 */
   processedBy?: ProcessedBy;
+
+  category: Category;
 }

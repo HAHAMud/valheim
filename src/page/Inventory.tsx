@@ -1,27 +1,31 @@
-import { Category } from '@/components/Category';
+import { useState } from 'react';
 import { Card, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
-import useGetAPI from '@/hooks/useGetAPI';
-import { FoodType } from '@/module/inventory/types';
+import { useGetCategories, useGetInventoryItems } from '@/hooks';
+import { Category, InventoryItem } from '@/module/inventory/types';
 import { getObtainMethods } from '@/module/inventory';
+import { CategoryList } from '@/components/CategoryList';
 
-type Props = FoodType;
+type Props = InventoryItem;
 
 export const Inventory = () => {
-  // TODO: filter by category
-  const { isLoading: isBerriesLoading, data: berries } = useGetAPI('/data/berries.json');
-  const { isLoading: isCookedLoading, data: cooked } = useGetAPI('/data/cooked.json');
+  const [selected, setSelected] = useState<Category | null>(null);
+  const { isFetching: isCategoriesLoading, data: categories } = useGetCategories();
 
-  if (isBerriesLoading || isCookedLoading) return <Loading />;
+  const { isFetching, data: items = [] } = useGetInventoryItems(selected);
 
-  const foods = berries.concat(cooked);
+  const onClickCategory = (category: Category) => {
+    setSelected((val) => (val === category ? null : category));
+  };
+
+  if (isCategoriesLoading || isFetching) return <Loading />;
 
   return (
     <div>
-      <Category />
+      <CategoryList categories={categories} selectedCategory={selected} onClick={onClickCategory} />
 
       <CardList>
-        {foods.map(({ name, photo, stack, obtainMethods }: Props) => (
+        {items.map(({ name, photo, stack, obtainMethods }: Props) => (
           <Card
             key={name}
             title={name}

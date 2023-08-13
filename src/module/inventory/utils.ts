@@ -1,4 +1,4 @@
-import { FoodType, ObtainMethod } from '.';
+import { InventoryItem, ObtainMethod } from '.';
 
 export const obtainMethodLabel: Record<ObtainMethod, string> = {
   collect: '採集',
@@ -9,5 +9,5 @@ export const obtainMethodLabel: Record<ObtainMethod, string> = {
   unknown: '未知',
 } as const;
 
-export const getObtainMethods = (obtainMethods: FoodType['obtainMethods']) =>
+export const getObtainMethods = (obtainMethods: InventoryItem['obtainMethods']) =>
   obtainMethods.map((method) => obtainMethodLabel[method]).join(', ');
