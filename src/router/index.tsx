@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
         element: <Area />,
       },
       {
-        path: '/library',
+        path: '/inventory',
         element: <Inventory />,
       },
       {
