@@ -1,12 +1,12 @@
 import { Card, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
-import useGetAPI from '@/hooks/useGetAPI';
+import { useGetAreas } from '@/hooks';
 import { AreaItemsType } from '@/module/area/type';
 
 type Props = AreaItemsType;
 
 export const Area = () => {
-  const { isLoading, data: areaItems } = useGetAPI('/data/areas.json');
+  const { isLoading, data: areaItems = [] } = useGetAreas();
 
   if (isLoading) return <Loading />;
 
