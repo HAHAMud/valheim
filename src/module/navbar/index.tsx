@@ -7,7 +7,7 @@ export const navbarItems: NavbarItemsType[] = [
   },
   {
     title: '圖鑑',
-    path: '/library',
+    path: '/inventory',
   },
   {
     title: '妖怪',
