@@ -22,7 +22,14 @@ export const Inventory = () => {
 
   return (
     <div>
-      <CategoryList categories={categories} selectedCategory={selected} onClick={onClickCategory} />
+      <CategoryList
+        categories={categories}
+        selectedCategory={selected}
+        onClick={onClickCategory}
+        className={{
+          m: 6,
+        }}
+      />
 
       <CardList>
         {items.map(({ name, photo, stack, obtainMethods }: Props) => (
