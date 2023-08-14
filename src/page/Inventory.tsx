@@ -31,6 +31,7 @@ export const Inventory = () => {
             title={name}
             photo={`inventory/food/${photo}.png`}
             slug={String(stack)}
+            info="獲取方式"
             extra={getObtainMethods(obtainMethods)}
           />
         ))}
