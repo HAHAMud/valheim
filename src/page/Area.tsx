@@ -12,8 +12,17 @@ export const Area = () => {
 
   return (
     <CardList>
-      {areaItems.map(({ name, photo, ...restArea }: Props) => (
-        <Card key={name} title={name} {...restArea} photo={`area/${photo}.webp`} />
+      {areaItems.map(({ name, photo, boss, ...restArea }: Props) => (
+        <Card
+          key={name}
+          title={name}
+          extra={boss}
+          photo={`area/${photo}.webp`}
+          info="boss"
+          minHeight={280}
+          width={320}
+          {...restArea}
+        />
       ))}
     </CardList>
   );

@@ -1,88 +1,147 @@
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import {
+  AppBar,
+  Container,
+  Toolbar,
+  Menu,
+  Box,
+  IconButton,
+  Typography,
+  MenuItem,
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '@/assets/valheim_logo.png';
-import global from '@/assets/svg/global.svg';
-import search from '@/assets/svg/search.svg';
 import { navbarItems } from '@/module/navbar';
 import { NavbarItemsType } from '@/module/navbar/type';
 
-const NavItem = ({ navItem, isActive }: { navItem: NavbarItemsType; isActive: boolean }) => {
+const NavItem = ({
+  navItem,
+  handleCloseNavMenu,
+}: {
+  navItem: NavbarItemsType;
+  handleCloseNavMenu: () => void;
+}) => {
+  const navigate = useNavigate();
+
+  const onClickToPage = () => {
+    navigate(navItem.path);
+    handleCloseNavMenu();
+  };
+
   return (
-    <Link
-      to={navItem.path}
-      className={`inline-block rounded-lg px-3 py-2 hover:bg-teal-300 first:${
-        isActive && 'bg-red-200'
-      }`}
-    >
-      <div className="relative flex cursor-pointer  items-center whitespace-nowrap text-teal-500 hover:text-white">
-        {navItem.title}
-      </div>
-    </Link>
+    <MenuItem onClick={onClickToPage}>
+      <Typography textAlign="center">{navItem.title}</Typography>
+    </MenuItem>
+  );
+};
+
+const LogoItem = ({ className }: { className?: object }) => {
+  return (
+    <Typography variant="h5" noWrap component="a" href="/" sx={className}>
+      <img src={Logo} alt="logo" />
+    </Typography>
   );
 };
 
 export const Navbar = () => {
-  const [activeItem, setActiveItem] = useState<string>('/');
-  const location = useLocation();
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
-  useEffect(() => {
-    setActiveItem(location.pathname);
-  }, [location.pathname]);
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   return (
-    <nav className=" fixed top-0 z-10 mx-auto flex h-20 w-full items-center justify-between bg-white px-8">
-      {/* <!-- logo --> */}
-      <div className="inline-flex">
-        <a className="_o6689fn" href="/">
-          <div className="hidden md:block">
-            <img src={Logo} alt="logo" className="h-24" />
-          </div>
-          <div className="block md:hidden">
-            <img src={Logo} alt="logo" className="h-24" />
-          </div>
-        </a>
-      </div>
+    <AppBar position="static">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          {/* Logo */}
+          <LogoItem
+            className={{
+              mr: 2,
+              width: '80px',
+              height: '80px',
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          />
 
-      {/* search bar  */}
-      <div className="hidden flex-shrink flex-grow-0 justify-start px-2 sm:block">
-        <div className="inline-block">
-          <div className="inline-flex max-w-full items-center">
-            <button
-              className="relative flex w-60 flex-shrink flex-grow-0 items-center rounded-full border px-1 py-1  pl-2"
-              type="button"
+          {/* Menu */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
             >
-              <div className="block flex-shrink flex-grow overflow-hidden text-gray-400">
-                Start your search
-              </div>
-              <div className="relative flex h-8 w-8  items-center justify-center rounded-full">
-                <img src={search} alt="search" className="h-4 w-4" />
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {navbarItems.map((navItem: NavbarItemsType) => (
+                <NavItem
+                  key={navItem.title}
+                  navItem={navItem}
+                  handleCloseNavMenu={handleCloseNavMenu}
+                />
+              ))}
+            </Menu>
+          </Box>
 
-      {/* menu */}
-      <div className="flex-initial">
-        <div className="relative flex items-center justify-end">
-          <div className="mr-4 flex items-center">
-            {navbarItems.map((item: NavbarItemsType) => (
-              <NavItem key={item.path} navItem={item} isActive={item.path === activeItem} />
+          {/* RWD LOGO */}
+          <LogoItem
+            className={{
+              mr: 2,
+              width: '80px',
+              height: '80px',
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          />
+
+          {/* RWD Menu */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {navbarItems.map((navItem: NavbarItemsType) => (
+              <NavItem
+                key={navItem.title}
+                navItem={navItem}
+                handleCloseNavMenu={handleCloseNavMenu}
+              />
             ))}
-
-            <div className="relative block">
-              <button
-                type="button"
-                className="relative inline-block rounded-full px-3 py-2 hover:bg-gray-200 "
-              >
-                <div className="flex h-5 items-center">
-                  <img src={global} alt="global" className="h-4 w-4" />
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
