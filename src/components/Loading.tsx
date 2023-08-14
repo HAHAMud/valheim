@@ -1,8 +1,22 @@
+import { Typography, CircularProgress } from '@mui/joy';
 const Loading = () => {
   return (
-    <div className="z-50 flex h-screen w-screen items-center justify-center bg-slate-500">
-      <h1>Loading...</h1>
-    </div>
+    <Typography
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '1rem',
+        fontSize: '4rem',
+        color: 'white',
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+      }}
+    >
+      <CircularProgress />
+      Loading...
+    </Typography>
   );
 };
 
