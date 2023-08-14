@@ -9,7 +9,7 @@ import { CategoryList } from '@/components/CategoryList';
 type Props = InventoryItem;
 
 export const Inventory = () => {
-  const [selected, setSelected] = useState<Category | null>(null);
+  const [selected, setSelected] = useState<Category | null>('all');
   const { isFetching: isCategoriesLoading, data: categories } = useGetCategories();
 
   const { isFetching, data: items = [] } = useGetInventoryItems(selected);
@@ -23,7 +23,7 @@ export const Inventory = () => {
   return (
     <div>
       <CategoryList
-        categories={categories}
+        categories={[{ name: '全部', category: 'all' }, ...(categories || [])]}
         selectedCategory={selected}
         onClick={onClickCategory}
         className={{
