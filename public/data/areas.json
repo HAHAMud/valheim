@@ -4,40 +4,47 @@
     "slug": "green plains",
     "photo": "green-plains",
     "boss": "赤血靈鹿",
-    "bossPhoto": "greenPlainsBoss"
+    "bossPhoto": "greenPlainsBoss",
+    "nameEN": "green plains"
   },
   {
     "name": "黑森林",
     "slug": "black forest",
     "photo": "black-forest",
-    "boss": "古樹長老"
+    "boss": "古樹長老",
+    "nameEN": "black forest"
   },
   {
     "name": "平原",
     "slug": "plain",
     "photo": "plains",
-    "boss": "雅格魯斯"
+    "boss": "雅格魯斯",
+    "nameEN": "plain"
   },
   {
     "name": "迷霧森林",
     "slug": "mislands",
-    "photo": "mislands"
+    "photo": "mislands",
+    "nameEN": "mislands"
   },
   {
     "name": "沼澤",
     "slug": "swamp",
     "photo": "swamp",
-    "boss": "邪骨惡靈"
+    "boss": "邪骨惡靈",
+    "nameEN": "swamp"
   },
   {
     "name": "雪山",
     "slug": "snow mountain",
     "photo": "mountains",
-    "boss": "冰霜龍母"
+    "boss": "冰霜龍母",
+    "nameEN": "snow mountain"
   },
   {
     "name": "北極",
     "slug": "deep north",
-    "photo": "deep-north"
+    "photo": "deep-north",
+    "nameEN": "deep north"
   }
 ]

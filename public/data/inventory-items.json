@@ -9,7 +9,8 @@
     "obtainMethods": ["collect"],
     "photo": "raspberry",
     "usage": "",
-    "category": "berry"
+    "category": "berry",
+    "nameEN": "raspberry"
   },
   {
     "name": "藍莓",
@@ -21,7 +22,8 @@
     "obtainMethods": ["collect"],
     "photo": "blueberry",
     "usage": "",
-    "category": "berry"
+    "category": "berry",
+    "nameEN": "blueberry"
   },
   {
     "name": "雲莓",
@@ -33,7 +35,8 @@
     "obtainMethods": ["collect"],
     "photo": "cloudberry",
     "usage": "",
-    "category": "berry"
+    "category": "berry",
+    "nameEN": "cloudberry"
   },
   {
     "name": "蘑菇",
@@ -45,7 +48,8 @@
     "obtainMethods": ["collect"],
     "photo": "Mushroom",
     "usage": "",
-    "category": "mushroom"
+    "category": "mushroom",
+    "nameEN": "Mushroom"
   },
   {
     "name": "黃蘑菇",
@@ -57,7 +61,8 @@
     "obtainMethods": ["collect"],
     "photo": "Yellow Mushroom",
     "usage": "",
-    "category": "mushroom"
+    "category": "mushroom",
+    "nameEN": "Yellow Mushroom"
   },
   {
     "name": "藍蘑菇",
@@ -69,7 +74,8 @@
     "obtainMethods": ["unknown"],
     "photo": "Blue Mushroom",
     "usage": "",
-    "category": "mushroom"
+    "category": "mushroom",
+    "nameEN": "Blue Mushroom"
   },
   {
     "name": "烤肉",
@@ -82,7 +88,22 @@
     "photo": "Cooked Meat",
     "usage": "",
     "processedBy": ["barbecue grill"],
-    "category": "cooked"
+    "category": "cooked",
+    "nameEN": "Cooked Meat"
+  },
+  {
+    "name": "熟鹿肉",
+    "life": 35,
+    "endurance": 12,
+    "healing": 2,
+    "duration": 1200,
+    "stack": 20,
+    "obtainMethods": ["cook"],
+    "photo": "Cooked Deer Meat",
+    "usage": "",
+    "processedBy": ["barbecue grill"],
+    "category": "cooked",
+    "nameEN": "Cooked Deer Meat"
   },
   {
     "name": "蜥蜴腿烤肉",
@@ -95,7 +116,8 @@
     "photo": "Grilled Neck Tail",
     "usage": "",
     "processedBy": ["barbecue grill"],
-    "category": "cooked"
+    "category": "cooked",
+    "nameEN": "Grilled Neck Tail"
   },
   {
     "name": "香腸",
@@ -108,7 +130,8 @@
     "photo": "Sausages",
     "usage": "",
     "processedBy": ["cast iron pan"],
-    "category": "cooked"
+    "category": "cooked",
+    "nameEN": "Sausages"
   },
   {
     "name": "烤魚",
@@ -121,7 +144,8 @@
     "photo": "Cooked Fish",
     "usage": "",
     "processedBy": ["barbecue grill"],
-    "category": "cooked"
+    "category": "cooked",
+    "nameEN": "Cooked Fish"
   },
   {
     "name": "烤蛇肉",
@@ -134,7 +158,8 @@
     "photo": "Cooked Serpent Meat",
     "usage": "",
     "processedBy": ["barbecue grill"],
-    "category": "cooked"
+    "category": "cooked",
+    "nameEN": "Cooked Serpent Meat"
   },
   {
     "name": "熟平原犛牛肉",
@@ -147,6 +172,7 @@
     "photo": "Cooked Serpent Meat",
     "usage": "",
     "processedBy": ["barbecue grill"],
-    "category": "cooked"
+    "category": "cooked",
+    "nameEN": "Cooked Serpent Meat"
   }
 ]
