@@ -6,10 +6,12 @@ export interface CategoryType {
 }
 
 const obtainMethods = ['collect', 'killBoss', 'killMob', 'fish', 'cook', 'unknown'] as const;
-const processedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
+const droppedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
+const craftingMaterials = ['unknown'] as const;
 
 export type ObtainMethod = (typeof obtainMethods)[number];
-export type ProcessedBy = (typeof processedBy)[number];
+export type DroppedBy = (typeof droppedBy)[number];
+export type CraftingMaterials = (typeof craftingMaterials)[number];
 
 export interface InventoryItem {
   /** 名稱 */
@@ -39,8 +41,12 @@ export interface InventoryItem {
   /** 用途 */
   usage: string;
 
-  /** 加工方式 */
-  processedBy?: ProcessedBy;
+  /** 掉落方式 */
+  droppedBy?: DroppedBy;
 
+  /**分類 */
   category: Category;
+
+  /** 食材 */
+  craftingMaterials?: CraftingMaterials[];
 }
