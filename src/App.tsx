@@ -1,8 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { Stack, ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material';
 import { Navbar } from '@/components/Navbar';
-import { DetailDrawer } from '@/components/DetailDrawer';
 
 const queryClient = new QueryClient({
   defaultOptions: {
