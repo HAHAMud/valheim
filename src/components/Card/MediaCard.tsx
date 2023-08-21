@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Divider, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, CardProps, Divider, Typography } from '@mui/material';
 
 type Props = {
   photo: string;
@@ -6,21 +6,13 @@ type Props = {
   title: string;
   info?: string;
   extra?: string;
-  minHeight?: number;
-  width?: number;
+  sx?: CardProps['sx'];
+  onClick?: () => void;
 };
 
-export function MediaCard({
-  photo,
-  slug,
-  title,
-  extra,
-  info,
-  minHeight = 160,
-  width = 200,
-}: Props) {
+export function MediaCard({ photo, slug, title, extra, info, sx, onClick }: Props) {
   return (
-    <Card sx={{ minHeight, width }}>
+    <Card sx={sx} onClick={onClick}>
       <CardMedia
         sx={{
           background:
@@ -29,7 +21,6 @@ export function MediaCard({
       >
         <img
           src={photo}
-          srcSet={photo}
           loading="lazy"
           alt={title}
           style={{

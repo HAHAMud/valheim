@@ -19,8 +19,7 @@ export const Area = () => {
           extra={boss}
           photo={`area/${photo}.webp`}
           info="boss"
-          minHeight={280}
-          width={320}
+          sx={{ minHeight: 280, width: 320 }}
           {...restArea}
         />
       ))}
