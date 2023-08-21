@@ -28,10 +28,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Stack>
-          <Outlet />
-          <DetailDrawer />
-        </Stack>
+        <Outlet />
       </ThemeProvider>
     </QueryClientProvider>
   );
