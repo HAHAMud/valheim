@@ -1,35 +1,28 @@
 import { Card, CardContent, CardMedia, CardProps, Divider, Typography } from '@mui/material';
+import { HorizontalCenteredBox } from '../Box';
 
-type Props = {
+type Props = CardProps & {
   photo: string;
   slug: string;
   title: string;
   info?: string;
   extra?: string;
-  sx?: CardProps['sx'];
-  onClick?: () => void;
 };
 
-export function MediaCard({ photo, slug, title, extra, info, sx, onClick }: Props) {
+export function MediaCard({ photo, slug, title, extra, info, ...restProps }: Props) {
   return (
-    <Card sx={sx} onClick={onClick}>
+    <Card {...restProps}>
       <CardMedia
         sx={{
           background:
             'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
         }}
       >
-        <img
-          src={photo}
-          loading="lazy"
-          alt={title}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectPosition: 'center',
-          }}
-        />
+        <HorizontalCenteredBox>
+          <img src={photo} loading="lazy" alt={title} />
+        </HorizontalCenteredBox>
       </CardMedia>
+
       <CardContent sx={{ justifyContent: 'flex-end' }}>
         <Typography mb={1}>{title}</Typography>
         <Typography>{slug}</Typography>

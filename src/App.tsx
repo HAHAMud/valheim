@@ -1,8 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { Stack, ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material';
 import { Navbar } from '@/components/Navbar';
-import { DetailDrawer } from '@/components/DetailDrawer';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -28,10 +27,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Stack>
-          <Outlet />
-          <DetailDrawer />
-        </Stack>
+        <Outlet />
       </ThemeProvider>
     </QueryClientProvider>
   );
