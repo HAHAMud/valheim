@@ -6,16 +6,28 @@ export interface CategoryType {
 }
 
 const obtainMethods = ['collect', 'killBoss', 'killMob', 'fish', 'cook', 'unknown'] as const;
-const droppedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
+// const droppedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
 const craftingMaterials = ['unknown'] as const;
 
 export type ObtainMethod = (typeof obtainMethods)[number];
-export type DroppedBy = (typeof droppedBy)[number];
+// export type DroppedBy = (typeof droppedBy)[number];
 export type CraftingMaterials = (typeof craftingMaterials)[number];
+
+export interface MadeFrom {
+  name: string;
+  count: number;
+}
+
+export interface DroppedBy {
+  name: string;
+}
 
 export interface InventoryItem {
   /** 名稱 */
   name: string;
+
+  /** 英文名稱 */
+  nameEN: string;
 
   /** 生命值 */
   life: number;
@@ -42,11 +54,11 @@ export interface InventoryItem {
   usage: string;
 
   /** 掉落方式 */
-  droppedBy?: DroppedBy;
+  droppedBy?: DroppedBy[];
 
   /**分類 */
   category: Category;
 
   /** 食材 */
-  craftingMaterials?: CraftingMaterials[];
+  madeFrom?: MadeFrom[];
 }
