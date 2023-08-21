@@ -1,4 +1,5 @@
-import { Typography, CircularProgress } from '@mui/joy';
+import { CircularProgress, Typography } from '@mui/material';
+
 const Loading = () => {
   return (
     <Typography

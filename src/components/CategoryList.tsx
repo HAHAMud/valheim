@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from '@mui/joy';
+import { Button, ButtonGroup } from '@mui/material';
 import { Category, CategoryType } from '@/module/inventory/types';
 
 type Props = {
@@ -10,11 +10,7 @@ type Props = {
 
 export const CategoryList = ({ categories, selectedCategory, onClick, className }: Props) => {
   return (
-    <ButtonGroup
-      spacing="1rem"
-      aria-label="spacing button group"
-      sx={{ ...className, flexWrap: 'wrap' }}
-    >
+    <ButtonGroup sx={{ ...className, flexWrap: 'wrap', spacing: '1rem' }}>
       {categories?.map(({ name, category }: CategoryType) => (
         <Button
           key={name}

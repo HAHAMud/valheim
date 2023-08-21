@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Card, CardList } from '@/components/Card';
+import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { useGetCategories, useGetInventoryItems } from '@/hooks';
 import { Category, InventoryItem } from '@/module/inventory/types';
@@ -33,7 +33,7 @@ export const Inventory = () => {
 
       <CardList>
         {items.map(({ name, photo, stack, obtainMethods }: Props) => (
-          <Card
+          <MediaCard
             key={name}
             title={name}
             photo={`inventory/food/${photo}.png`}
