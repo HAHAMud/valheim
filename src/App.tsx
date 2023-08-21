@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { ThemeProvider, createTheme } from '@mui/material';
 import { Navbar } from '@/components/Navbar';
 
 const queryClient = new QueryClient({
@@ -11,11 +12,23 @@ const queryClient = new QueryClient({
   },
 });
 
+const theme = createTheme({
+  components: {
+    MuiStack: {
+      defaultProps: {
+        direction: 'row',
+      },
+    },
+  },
+});
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Navbar />
-      <Outlet />
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Outlet />
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

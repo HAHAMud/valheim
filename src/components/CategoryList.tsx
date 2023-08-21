@@ -1,20 +1,16 @@
-import { Button, ButtonGroup } from '@mui/joy';
+import { Button, ButtonGroup, ButtonGroupProps } from '@mui/material';
 import { Category, CategoryType } from '@/module/inventory/types';
 
 type Props = {
   categories?: CategoryType[];
   selectedCategory: Category | null;
-  className?: Record<string, unknown>;
+  sx?: ButtonGroupProps['sx'];
   onClick: (category: Category) => void;
 };
 
-export const CategoryList = ({ categories, selectedCategory, onClick, className }: Props) => {
+export const CategoryList = ({ categories, selectedCategory, sx, onClick }: Props) => {
   return (
-    <ButtonGroup
-      spacing="1rem"
-      aria-label="spacing button group"
-      sx={{ ...className, flexWrap: 'wrap' }}
-    >
+    <ButtonGroup sx={{ ...sx, flexWrap: 'wrap', spacing: '1rem' }}>
       {categories?.map(({ name, category }: CategoryType) => (
         <Button
           key={name}
