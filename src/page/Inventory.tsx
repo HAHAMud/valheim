@@ -26,9 +26,7 @@ export const Inventory = () => {
         categories={[{ name: '全部', category: 'all' }, ...(categories || [])]}
         selectedCategory={selected}
         onClick={onClickCategory}
-        className={{
-          m: 6,
-        }}
+        sx={{ m: 6 }}
       />
 
       <CardList>
