@@ -1,4 +1,4 @@
-import { Card, CardList } from '@/components/Card';
+import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { useGetAreas } from '@/hooks';
 import { AreaItemsType } from '@/module/area/type';
@@ -13,14 +13,13 @@ export const Area = () => {
   return (
     <CardList>
       {areaItems.map(({ name, photo, boss, ...restArea }: Props) => (
-        <Card
+        <MediaCard
           key={name}
           title={name}
           extra={boss}
           photo={`area/${photo}.webp`}
           info="boss"
-          minHeight={280}
-          width={320}
+          sx={{ minHeight: 280, width: 320 }}
           {...restArea}
         />
       ))}
