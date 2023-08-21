@@ -5,7 +5,6 @@ import { useStoreActions } from '@/store';
 import { useGetCategories, useGetInventoryItems } from '@/hooks';
 import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
-import { getObtainMethods } from '@/module/inventory';
 import { CategoryList } from '@/components/CategoryList';
 import { DetailDrawer } from '@/components/DetailDrawer';
 
@@ -45,8 +44,8 @@ export const Inventory = () => {
               title={o.name}
               photo={`inventory/food/${o.photo}.png`}
               slug={String(o.stack)}
-              info="獲取方式"
-              extra={getObtainMethods(o.obtainMethods)}
+              info="取得處"
+              extra={o.droppedBy?.map((i) => i.name).join(', ')}
               onClick={() => onClickItem(o)}
             />
           ))}
