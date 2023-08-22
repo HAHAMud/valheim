@@ -1,683 +1,1185 @@
 [
   {
     "name": "樹莓",
-    "nameEN": "Raspberry",
+    "nameEN": "樹莓",
     "photo": "樹莓",
-    "life": 7,
-    "endurance": 20,
-    "healing": 1,
-    "duration": 600,
-    "stack": 50,
+    "life": "7",
+    "endurance": "20",
+    "healing": "1",
+    "duration": "600",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "草原"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "Grassland" }]
+    "category": "food"
   },
   {
     "name": "蘑菇",
-    "nameEN": "Mushroom",
+    "nameEN": "蘑菇",
     "photo": "蘑菇",
-    "life": 15,
-    "endurance": 15,
-    "healing": 1,
-    "duration": 900,
-    "stack": 50,
+    "life": "15",
+    "endurance": "15",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "草原"
+      },
+      {
+        "name": "黑森林"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "Grassland" }, { "name": "Black Forest" }]
+    "category": "food"
   },
   {
     "name": "蜂蜜",
-    "nameEN": "Honey",
+    "nameEN": "蜂蜜",
     "photo": "蜂蜜",
-    "life": 8,
-    "endurance": 35,
-    "healing": 1,
-    "duration": 900,
-    "stack": 50,
+    "life": "8",
+    "endurance": "35",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "蜂窩"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "Beehive" }]
+    "category": "food"
   },
   {
     "name": "燒烤蜥蛙尾巴",
-    "nameEN": "Grilled Neck Tail",
+    "nameEN": "燒烤蜥蛙尾巴",
     "photo": "燒烤蜥蛙尾巴",
-    "life": 25,
-    "endurance": 8,
-    "healing": 2,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "蜥蛙尾巴", "count": 1 }],
-    "droppedBy": [{ "name": "Cooking Station" }]
+    "life": "25",
+    "endurance": "8",
+    "healing": "2",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "蜥蛙尾巴",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟野豬肉",
-    "nameEN": "Cooked Boar Meat",
+    "nameEN": "熟野豬肉",
     "photo": "熟野豬肉",
-    "life": 30,
-    "endurance": 10,
-    "healing": 2,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "野豬肉", "count": 1 }],
-    "droppedBy": [{ "name": "Cooking Station" }]
+    "life": "30",
+    "endurance": "10",
+    "healing": "2",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "野豬肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟鹿肉",
-    "nameEN": "Cooked Deer Meat",
+    "nameEN": "熟鹿肉",
     "photo": "熟鹿肉",
-    "life": 35,
-    "endurance": 12,
-    "healing": 2,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "鹿肉", "count": 1 }],
-    "droppedBy": [{ "name": "Cooking Station" }]
+    "life": "35",
+    "endurance": "12",
+    "healing": "2",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "鹿肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "野豬肉乾",
-    "nameEN": "Boar Jerky",
+    "nameEN": "野豬肉乾",
     "photo": "野豬肉乾",
-    "life": 23,
-    "endurance": 23,
-    "healing": 2,
-    "duration": 1800,
-    "stack": 20,
-    "madeFrom": [
-      { "name": "野豬肉", "count": 1 },
-      { "name": "蜂蜜", "count": 1 }
+    "life": "23",
+    "endurance": "23",
+    "healing": "2",
+    "duration": "1800",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (1)"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Cooking Station" }]
+    "madeFrom": [
+      {
+        "name": "野豬肉",
+        "count": 1
+      },
+      {
+        "name": "蜂蜜",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "催吐莓",
-    "nameEN": "Bukeperries",
+    "nameEN": "催吐莓",
     "photo": "催吐莓",
-    "life": -100,
-    "endurance": -100,
-    "healing": 0,
-    "duration": 15,
-    "weight": 0.1,
-    "stack": 50,
+    "life": "-100%",
+    "endurance": "-100%",
+    "healing": "0",
+    "duration": "15",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "灰矮人薩滿"
+      },
+      {
+        "name": "綠皮鬼薩滿"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "灰矮人薩滿" }, { "name": "綠皮鬼薩滿" }]
+    "category": "food"
   },
   {
     "name": "藍莓",
-    "nameEN": "Blueberries",
+    "nameEN": "藍莓",
     "photo": "藍莓",
-    "life": 8,
-    "endurance": 25,
-    "healing": 1,
-    "duration": 600,
-    "weight": 0.1,
-    "stack": 50,
+    "life": "8",
+    "endurance": "25",
+    "healing": "1",
+    "duration": "600",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "黑森林"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "黑森林" }]
+    "category": "food"
   },
   {
     "name": "紅蘿蔔",
-    "nameEN": "Carrot",
+    "nameEN": "紅蘿蔔",
     "photo": "紅蘿蔔",
-    "life": 10,
-    "endurance": 32,
-    "healing": 1,
-    "duration": 900,
-    "weight": 0.3,
-    "stack": 50,
+    "life": "10",
+    "endurance": "32",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "紅蘿蔔種子"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "紅蘿蔔種子" }]
+    "category": "food"
   },
   {
     "name": "黃蘑菇",
-    "nameEN": "Yellow Mushroom",
+    "nameEN": "黃蘑菇",
     "photo": "黃蘑菇",
-    "life": 10,
-    "endurance": 30,
-    "healing": 1,
-    "duration": 600,
-    "weight": 0.1,
-    "stack": 50,
+    "life": "10",
+    "endurance": "30",
+    "healing": "1",
+    "duration": "600",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "地下城"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "地下城" }]
+    "category": "food"
   },
   {
     "name": "紅蘿蔔湯",
-    "nameEN": "Carrot Soup",
+    "nameEN": "紅蘿蔔湯",
     "photo": "紅蘿蔔湯",
-    "life": 15,
-    "endurance": 45,
-    "healing": 2,
-    "duration": 1500,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "蘑菇", "count": 1 },
-      { "name": "紅蘿蔔", "count": 3 }
+    "life": "15",
+    "endurance": "45",
+    "healing": "2",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (1)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (1)" }]
+    "madeFrom": [
+      {
+        "name": "蘑菇",
+        "count": 1
+      },
+      {
+        "name": "紅蘿蔔",
+        "count": 3
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "皇后果醬",
-    "nameEN": "Queens Jam",
+    "nameEN": "皇后果醬",
     "photo": "皇后果醬",
-    "life": 14,
-    "endurance": 40,
-    "healing": 2,
-    "duration": 1200,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "樹莓", "count": 8 },
-      { "name": "藍莓", "count": 6 }
+    "life": "14",
+    "endurance": "40",
+    "healing": "2",
+    "duration": "1200",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (1)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (1)" }]
+    "madeFrom": [
+      {
+        "name": "樹莓",
+        "count": 8
+      },
+      {
+        "name": "藍莓",
+        "count": 6
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟魚肉",
-    "nameEN": "Cooked Fish",
+    "nameEN": "熟魚肉",
     "photo": "熟魚肉",
-    "life": 45,
-    "endurance": 15,
-    "healing": 2,
-    "duration": 1200,
-    "weight": 0.5,
-    "stack": 20,
-    "madeFrom": [{ "name": "生魚肉", "count": 1 }],
-    "droppedBy": [{ "name": "烹飪設施" }]
+    "life": "45",
+    "endurance": "15",
+    "healing": "2",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "生魚肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "燉鹿肉",
-    "nameEN": "Deerstew",
+    "nameEN": "燉鹿肉",
     "photo": "燉鹿肉",
-    "life": 45,
-    "endurance": 15,
-    "healing": 3,
-    "duration": 1500,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "蘑菇", "count": 1 },
-      { "name": "紅蘿蔔", "count": 1 },
-      { "name": "熟鹿肉", "count": 1 }
+    "life": "45",
+    "endurance": "15",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (1)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (1)" }]
+    "madeFrom": [
+      {
+        "name": "藍莓",
+        "count": 1
+      },
+      {
+        "name": "紅蘿蔔",
+        "count": 1
+      },
+      {
+        "name": "熟鹿肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "肉醬",
-    "nameEN": "Mincemeat Sauce",
+    "nameEN": "肉醬",
     "photo": "肉醬",
-    "life": 40,
-    "endurance": 13,
-    "healing": 3,
-    "duration": 1500,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "野豬肉", "count": 1 },
-      { "name": "蜥蛙尾巴", "count": 1 },
-      { "name": "紅蘿蔔", "count": 1 }
+    "life": "40",
+    "endurance": "13",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (1)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (1)" }]
+    "madeFrom": [
+      {
+        "name": "野豬肉",
+        "count": 1
+      },
+      {
+        "name": "蜥蛙尾巴",
+        "count": 1
+      },
+      {
+        "name": "紅蘿蔔",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "沼泥奶昔",
-    "nameEN": "Shocklate Smoothie",
+    "nameEN": "沼泥奶昔",
     "photo": "沼泥奶昔",
-    "life": 16,
-    "endurance": 50,
-    "healing": 1,
-    "duration": 1200,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "沼泥", "count": 1 },
-      { "name": "樹莓", "count": 2 },
-      { "name": "藍莓", "count": 2 }
+    "life": "16",
+    "endurance": "50",
+    "healing": "1",
+    "duration": "1200",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (2)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (2)" }]
+    "madeFrom": [
+      {
+        "name": "沼泥",
+        "count": 1
+      },
+      {
+        "name": "樹莓",
+        "count": 2
+      },
+      {
+        "name": "藍莓",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "大頭菜燉煮",
-    "nameEN": "Turnip Stew",
+    "nameEN": "大頭菜燉煮",
     "photo": "大頭菜燉煮",
-    "life": 18,
-    "endurance": 55,
-    "healing": 2,
-    "duration": 1500,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "野豬肉", "count": 1 },
-      { "name": "大頭菜", "count": 3 }
+    "life": "18",
+    "endurance": "55",
+    "healing": "2",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (2)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (2)" }]
+    "madeFrom": [
+      {
+        "name": "野豬肉",
+        "count": 1
+      },
+      {
+        "name": "大頭菜",
+        "count": 3
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "香腸",
-    "nameEN": "Sausages",
+    "nameEN": "香腸",
     "photo": "香腸",
-    "life": 55,
-    "endurance": 18,
-    "healing": 3,
-    "duration": 1500,
-    "weight": 0.5,
-    "stack": 20,
-    "madeFrom": [
-      { "name": "內臟", "count": 4 },
-      { "name": "野豬肉", "count": 1 },
-      { "name": "薊", "count": 1 }
+    "life": "55",
+    "endurance": "18",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (2)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (2)" }]
+    "madeFrom": [
+      {
+        "name": "內臟",
+        "count": 4
+      },
+      {
+        "name": "野豬肉",
+        "count": 1
+      },
+      {
+        "name": "薊",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "黑血湯",
-    "nameEN": "Black Soup",
+    "nameEN": "黑血湯",
     "photo": "黑血湯",
-    "life": 50,
-    "endurance": 17,
-    "healing": 3,
-    "duration": 1200,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "血袋", "count": 1 },
-      { "name": "蜂蜜", "count": 1 },
-      { "name": "大頭菜", "count": 1 }
+    "life": "50",
+    "endurance": "17",
+    "healing": "3",
+    "duration": "1200",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (2)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (2)" }]
+    "madeFrom": [
+      {
+        "name": "血袋",
+        "count": 1
+      },
+      {
+        "name": "蜂蜜",
+        "count": 1
+      },
+      {
+        "name": "大頭菜",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟海蛇肉",
-    "nameEN": "Cooked Serpent Meat",
+    "nameEN": "熟海蛇肉",
     "photo": "熟海蛇肉",
-    "life": 70,
-    "endurance": 23,
-    "healing": 3,
-    "duration": 1500,
-    "weight": 10.0,
-    "stack": 50,
-    "madeFrom": [{ "name": "海蛇肉", "count": 1 }],
-    "droppedBy": [{ "name": "鐵製烹飪設施" }]
+    "life": "70",
+    "endurance": "23",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "鐵製烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "海蛇肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "海蛇燉煮",
-    "nameEN": "Serpent Stew",
+    "nameEN": "海蛇燉煮",
     "photo": "海蛇燉煮",
-    "life": 80,
-    "endurance": 26,
-    "healing": 4,
-    "duration": 1800,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "蘑菇", "count": 1 },
-      { "name": "熟海蛇肉", "count": 1 },
-      { "name": "蜂蜜", "count": 2 }
+    "life": "80",
+    "endurance": "26",
+    "healing": "4",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (2)"
+      }
     ],
-    "droppedBy": [{ "name": "鐵鍋 (2)" }]
+    "madeFrom": [
+      {
+        "name": "蘑菇",
+        "count": 1
+      },
+      {
+        "name": "熟海蛇肉",
+        "count": 1
+      },
+      {
+        "name": "蜂蜜",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "洋蔥",
-    "nameEN": "Onion",
+    "nameEN": "洋蔥",
     "photo": "洋蔥",
-    "life": 13,
-    "endurance": 40,
-    "healing": 1,
-    "duration": 900,
-    "weight": 0.3,
-    "stack": 50,
+    "life": "13",
+    "endurance": "40",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "洋蔥種子"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "洋蔥種子" }]
+    "category": "food"
   },
   {
     "name": "洋蔥湯",
-    "nameEN": "Onion Soup",
+    "nameEN": "洋蔥湯",
     "photo": "洋蔥湯",
-    "life": 20,
-    "endurance": 60,
-    "healing": 1,
-    "duration": 1200,
-    "weight": 1.0,
-    "stack": 10,
-    "madeFrom": [{ "name": "洋蔥", "count": 3 }],
-    "droppedBy": [{ "name": "鐵鍋 (3)" }]
+    "life": "20",
+    "endurance": "60",
+    "healing": "1",
+    "duration": "1200",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (3)"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "洋蔥",
+        "count": 3
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟狼肉",
-    "nameEN": "Cooked Wolf Meat",
+    "nameEN": "熟狼肉",
     "photo": "熟狼肉",
-    "life": 45,
-    "endurance": 15,
-    "healing": 3,
-    "duration": 1200,
-    "weight": 1.0,
-    "stack": 20,
-    "madeFrom": [{ "name": "狼肉", "count": 1 }],
-    "droppedBy": [{ "name": "烹飪設施" }]
+    "life": "45",
+    "endurance": "15",
+    "healing": "3",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "狼肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "狼肉乾",
-    "nameEN": "Wolf Jerky",
+    "nameEN": "狼肉乾",
     "photo": "狼肉乾",
-    "life": 33,
-    "endurance": 33,
-    "healing": 3,
-    "duration": 1800,
-    "stack": 20,
-    "madeFrom": [
-      { "name": "狼肉", "count": 1 },
-      { "name": "蜂蜜", "count": 1 }
+    "life": "33",
+    "endurance": "33",
+    "healing": "3",
+    "duration": "1800",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (3)"
+      }
     ],
-    "droppedBy": []
+    "madeFrom": [
+      {
+        "name": "狼肉",
+        "count": 1
+      },
+      {
+        "name": "蜂蜜",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "狼肉串",
-    "nameEN": "Wolf Skewer",
+    "nameEN": "狼肉串",
     "photo": "狼肉串",
-    "life": 65,
-    "endurance": 21,
-    "healing": 3,
-    "duration": 1500,
-    "stack": 20,
-    "madeFrom": [
-      { "name": "狼肉", "count": 1 },
-      { "name": "蘑菇", "count": 2 },
-      { "name": "洋蔥", "count": 1 }
+    "life": "65",
+    "endurance": "21",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (3)"
+      }
     ],
-    "droppedBy": []
+    "madeFrom": [
+      {
+        "name": "狼肉",
+        "count": 1
+      },
+      {
+        "name": "蘑菇",
+        "count": 2
+      },
+      {
+        "name": "洋蔥",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "眼淇淋",
-    "nameEN": "Eye Cream",
+    "nameEN": "眼淇淋",
     "photo": "眼淇淋",
-    "life": 21,
-    "endurance": 65,
-    "healing": 1,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "灰矮人之眼", "count": 3 },
-      { "name": "凍結腺", "count": 1 }
+    "life": "21",
+    "endurance": "65",
+    "healing": "1",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (3)"
+      }
     ],
-    "droppedBy": []
+    "madeFrom": [
+      {
+        "name": "灰矮人之眼",
+        "count": 3
+      },
+      {
+        "name": "凍結腺",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "雲莓",
-    "nameEN": "Cloudberries",
+    "nameEN": "雲莓",
     "photo": "雲莓",
-    "life": 13,
-    "endurance": 40,
-    "healing": 1,
-    "duration": 900,
-    "stack": 50,
+    "life": "13",
+    "endurance": "40",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "平原"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": []
+    "category": "food"
   },
   {
     "name": "熟蜥牛肉",
-    "nameEN": "Cooked Lox Meat",
+    "nameEN": "熟蜥牛肉",
     "photo": "熟蜥牛肉",
-    "life": 50,
-    "endurance": 16,
-    "healing": 4,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "蜥牛肉", "count": 1 }],
-    "droppedBy": []
+    "life": "50",
+    "endurance": "16",
+    "healing": "4",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵製烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "蜥牛肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "魚肉捲",
-    "nameEN": "Fish Wraps",
+    "nameEN": "魚肉捲",
     "photo": "魚肉捲",
-    "life": 70,
-    "endurance": 23,
-    "healing": 4,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "熟魚肉", "count": 2 },
-      { "name": "大麥粉", "count": 4 }
+    "life": "70",
+    "endurance": "23",
+    "healing": "4",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (4)"
+      }
     ],
-    "droppedBy": []
+    "madeFrom": [
+      {
+        "name": "熟魚肉",
+        "count": 2
+      },
+      {
+        "name": "大麥粉",
+        "count": 4
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "蜥牛肉派",
-    "nameEN": "Lox Meat Pie",
+    "nameEN": "蜥牛肉派",
     "photo": "蜥牛肉派",
-    "life": 75,
-    "endurance": 24,
-    "healing": 4,
-    "duration": 1800,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "大麥粉", "count": 4 },
-      { "name": "雲莓", "count": 2 },
-      { "name": "蜥牛肉", "count": 2 }
+    "life": "75",
+    "endurance": "24",
+    "healing": "4",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (4) + 石窯烤爐"
+      }
     ],
-    "droppedBy": []
+    "madeFrom": [
+      {
+        "name": "大麥粉",
+        "count": 4
+      },
+      {
+        "name": "雲莓",
+        "count": 2
+      },
+      {
+        "name": "蜥牛肉",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "黑布丁",
-    "nameEN": "Blood Pudding",
+    "nameEN": "黑布丁",
     "photo": "黑布丁",
-    "life": 25,
-    "endurance": 75,
-    "healing": 2,
-    "duration": 1800,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "薊", "count": 2 },
-      { "name": "血袋", "count": 2 },
-      { "name": "大麥粉", "count": 4 }
+    "life": "25",
+    "endurance": "75",
+    "healing": "2",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (4)"
+      }
     ],
-    "droppedBy": []
+    "madeFrom": [
+      {
+        "name": "薊",
+        "count": 2
+      },
+      {
+        "name": "血袋",
+        "count": 2
+      },
+      {
+        "name": "大麥粉",
+        "count": 4
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "麵包",
-    "nameEN": "Bread",
+    "nameEN": "麵包",
     "photo": "麵包",
-    "life": 23,
-    "endurance": 70,
-    "healing": 2,
-    "duration": 1500,
-    "stack": 20,
+    "life": "23",
+    "endurance": "70",
+    "healing": "2",
+    "duration": "1500",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (4)+ 石窯烤爐"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": []
+    "category": "food"
   },
   {
     "name": "法師帽",
-    "nameEN": "Magecap",
+    "nameEN": "法師帽",
     "photo": "法師帽",
-    "life": 25,
-    "endurance": 25,
-    "healing": 1,
-    "duration": 900,
-    "stack": 50,
+    "life": "25",
+    "endurance": "25",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "迷霧之地" }]
+    "category": "food"
   },
   {
     "name": "巨人泡芙",
-    "nameEN": "Jotun Puffs",
+    "nameEN": "巨人泡芙",
     "photo": "巨人泡芙",
-    "life": 25,
-    "endurance": 25,
-    "healing": 1,
-    "duration": 900,
-    "stack": 50,
+    "life": "25",
+    "endurance": "25",
+    "healing": "1",
+    "duration": "900",
+    "stack": "50",
+    "droppedBy": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
     "madeFrom": [],
-    "droppedBy": [{ "name": "迷霧之地" }]
+    "category": "food"
   },
   {
     "name": "熟蛋",
-    "nameEN": "Cooked Egg",
+    "nameEN": "熟蛋",
     "photo": "熟蛋",
-    "life": 35,
-    "endurance": 12,
-    "healing": 1,
-    "duration": 1200,
-    "stack": 10,
-    "madeFrom": [{ "name": "蛋", "count": 1 }],
-    "droppedBy": [{ "name": "迷霧之地" }]
+    "life": "35",
+    "endurance": "12",
+    "healing": "1",
+    "duration": "1200",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (1)"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "蛋",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟追尋者肉",
-    "nameEN": "Cooked Seeker Meat",
+    "nameEN": "熟追尋者肉",
     "photo": "熟追尋者肉",
-    "life": 60,
-    "endurance": 20,
-    "healing": 5,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "追尋者肉", "count": 1 }],
-    "droppedBy": [{ "name": "迷霧之地" }]
+    "life": "60",
+    "endurance": "20",
+    "healing": "5",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵製烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "追尋者肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "熟野兔肉",
-    "nameEN": "Cooked Hare Meat",
+    "nameEN": "熟野兔肉",
     "photo": "熟野兔肉",
-    "life": 60,
-    "endurance": 20,
-    "healing": 5,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "野兔肉", "count": 1 }],
-    "droppedBy": [{ "name": "迷霧之地" }]
+    "life": "60",
+    "endurance": "20",
+    "healing": "5",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵製烹飪設施"
+      }
+    ],
+    "madeFrom": [],
+    "category": "food"
   },
   {
     "name": "熟雞肉",
-    "nameEN": "Cooked Chicken Meat",
+    "nameEN": "熟雞肉",
     "photo": "熟雞肉",
-    "life": 60,
-    "endurance": 20,
-    "healing": 5,
-    "duration": 1200,
-    "stack": 20,
-    "madeFrom": [{ "name": "雞肉", "count": 1 }],
-    "droppedBy": [{ "name": "迷霧之地" }]
+    "life": "60",
+    "endurance": "20",
+    "healing": "5",
+    "duration": "1200",
+    "stack": "20",
+    "droppedBy": [
+      {
+        "name": "鐵製烹飪設施"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "雞肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "肉盤",
-    "nameEN": "Meat Platter",
+    "nameEN": "肉盤",
     "photo": "肉盤",
-    "life": 80,
-    "endurance": 26,
-    "healing": 5,
-    "duration": 1800,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "追尋者肉", "count": 1 },
-      { "name": "蜥牛肉", "count": 1 },
-      { "name": "野兔肉", "count": 1 }
+    "life": "80",
+    "endurance": "26",
+    "healing": "5",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5) + 石窯烤爐"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)+ Stone Oven" }]
+    "madeFrom": [
+      {
+        "name": "追尋者肉",
+        "count": 1
+      },
+      {
+        "name": "蜥牛肉",
+        "count": 1
+      },
+      {
+        "name": "野兔肉",
+        "count": 1
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "蜜汁雞肉",
-    "nameEN": "Honey Glazed Chicken",
+    "nameEN": "蜜汁雞肉",
     "photo": "蜜汁雞肉",
-    "life": 80,
-    "endurance": 26,
-    "healing": 5,
-    "duration": 1800,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "雞肉", "count": 1 },
-      { "name": "蜂蜜", "count": 3 },
-      { "name": "巨人泡芙", "count": 2 }
+    "life": "80",
+    "endurance": "26",
+    "healing": "5",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5) + 石窯烤爐"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)+ Stone Oven" }]
+    "madeFrom": [
+      {
+        "name": "雞肉",
+        "count": 1
+      },
+      {
+        "name": "蜂蜜",
+        "count": 3
+      },
+      {
+        "name": "巨人泡芙",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "迷霧兔大餐",
-    "nameEN": "Misthare Supreme",
+    "nameEN": "迷霧兔大餐",
     "photo": "迷霧兔大餐",
-    "life": 85,
-    "endurance": 28,
-    "healing": 5,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "野兔肉", "count": 1 },
-      { "name": "巨人泡芙", "count": 3 },
-      { "name": "紅蘿蔔", "count": 2 }
+    "life": "85",
+    "endurance": "28",
+    "healing": "5",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5) + 石窯烤爐"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)+ Stone Oven" }]
+    "madeFrom": [
+      {
+        "name": "野兔肉",
+        "count": 1
+      },
+      {
+        "name": "巨人泡芙",
+        "count": 3
+      },
+      {
+        "name": "紅蘿蔔",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "沙拉",
-    "nameEN": "Salad",
+    "nameEN": "沙拉",
     "photo": "沙拉",
-    "life": 26,
-    "endurance": 80,
-    "healing": 3,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "巨人泡芙", "count": 3 },
-      { "name": "洋蔥", "count": 3 },
-      { "name": "雲莓", "count": 3 }
+    "life": "26",
+    "endurance": "80",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5)"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)" }]
+    "madeFrom": [
+      {
+        "name": "巨人泡芙",
+        "count": 3
+      },
+      {
+        "name": "洋蔥",
+        "count": 3
+      },
+      {
+        "name": "雲莓",
+        "count": 3
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "蘑菇歐姆蛋",
-    "nameEN": "Mushroom Omelette",
+    "nameEN": "蘑菇歐姆蛋",
     "photo": "蘑菇歐姆蛋",
-    "life": 28,
-    "endurance": 85,
-    "healing": 3,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "蛋", "count": 3 },
-      { "name": "巨人泡芙", "count": 3 }
+    "life": "28",
+    "endurance": "85",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5)"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)" }]
+    "madeFrom": [
+      {
+        "name": "蛋",
+        "count": 3
+      },
+      {
+        "name": "巨人泡芙",
+        "count": 3
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "魚和麵包",
-    "nameEN": "Fish and Bread",
+    "nameEN": "魚和麵包",
     "photo": "魚和麵包",
-    "life": 30,
-    "endurance": 90,
-    "healing": 3,
-    "duration": 1800,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "鮟鱇魚", "count": 1 },
-      { "name": "生麵團", "count": 2 }
+    "life": "30",
+    "endurance": "90",
+    "healing": "3",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5) + 石窯烤爐"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)+ Stone Oven" }]
+    "madeFrom": [
+      {
+        "name": "鮟鱇魚",
+        "count": 1
+      },
+      {
+        "name": "生麵團",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "魔法填料蘑菇",
-    "nameEN": "Stuffed Mushroom",
+    "nameEN": "魔法填料蘑菇",
     "photo": "魔法填料蘑菇",
-    "life": 25,
-    "endurance": 12,
-    "healing": 3,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "法師帽", "count": 3 },
-      { "name": "血塊", "count": 1 },
-      { "name": "大頭菜", "count": 2 }
+    "life": "25",
+    "endurance": "12",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5) + 石窯烤爐"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)+ Stone Oven" }]
+    "madeFrom": [
+      {
+        "name": "法師帽",
+        "count": 3
+      },
+      {
+        "name": "血塊",
+        "count": 1
+      },
+      {
+        "name": "大頭菜",
+        "count": 2
+      }
+    ],
+    "category": "food"
   },
   {
     "name": "世界樹燕麥粥",
-    "nameEN": "Yggdrasil Porridge",
+    "nameEN": "世界樹燕麥粥",
     "photo": "世界樹燕麥粥",
-    "life": 27,
-    "endurance": 13,
-    "healing": 3,
-    "duration": 1500,
-    "stack": 10,
-    "madeFrom": [
-      { "name": "樹液", "count": 4 },
-      { "name": "大麥", "count": 3 },
-      { "name": "皇家果凍", "count": 2 }
+    "life": "27",
+    "endurance": "13",
+    "healing": "3",
+    "duration": "1500",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5)"
+      }
     ],
-    "droppedBy": [{ "name": "Iron Pot (5)" }]
+    "madeFrom": [
+      {
+        "name": "樹液",
+        "count": 4
+      },
+      {
+        "name": "大麥",
+        "count": 3
+      },
+      {
+        "name": "皇家果凍",
+        "count": 2
+      }
+    ],
+    "category": "food"
+  },
+  {
+    "name": "追尋者肉凍",
+    "nameEN": "追尋者肉凍",
+    "photo": "追尋者肉凍",
+    "life": "28",
+    "endurance": "14",
+    "healing": "3",
+    "duration": "1800",
+    "stack": "10",
+    "droppedBy": [
+      {
+        "name": "鐵鍋 (5)"
+      }
+    ],
+    "madeFrom": [
+      {
+        "name": "追尋者肉",
+        "count": 2
+      },
+      {
+        "name": "法師帽",
+        "count": 2
+      },
+      {
+        "name": "皇家果凍",
+        "count": 2
+      }
+    ],
+    "category": "food"
   }
 ]

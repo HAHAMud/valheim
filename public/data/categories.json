@@ -1,14 +1,6 @@
 [
   {
-    "name": "莓果",
-    "category": "berry"
-  },
-  {
-    "name": "蘑菇",
-    "category": "mushroom"
-  },
-  {
     "name": "食材",
-    "category": "cooked"
+    "category": "food"
   }
 ]

@@ -1,4 +1,4 @@
-export type Category = 'all' | 'berries' | 'mushrooms' | 'cooked';
+export type Category = 'all' | 'food';
 
 export interface CategoryType {
   name: string;
