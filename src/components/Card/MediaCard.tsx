@@ -7,9 +7,12 @@ type Props = CardProps & {
   title: string;
   info?: string;
   extra?: string;
+  icon?: React.ElementType | React.ComponentType;
 };
 
-export function MediaCard({ photo, slug, title, extra, info, ...restProps }: Props) {
+export function MediaCard({ photo, title, extra, info, icon, ...restProps }: Props) {
+  const MediaIcon = icon;
+
   return (
     <Card {...restProps}>
       <CardMedia
@@ -19,19 +22,49 @@ export function MediaCard({ photo, slug, title, extra, info, ...restProps }: Pro
         }}
       >
         <HorizontalCenteredBox>
-          <img src={photo} loading="lazy" alt={title} />
+          <img
+            src={photo}
+            loading="lazy"
+            alt={title}
+            style={{
+              maxWidth: '100%',
+              height: '100%',
+              objectFit: 'contain',
+            }}
+          />
         </HorizontalCenteredBox>
       </CardMedia>
 
-      <CardContent sx={{ justifyContent: 'flex-end' }}>
-        <Typography mb={1}>{title}</Typography>
-        <Typography>{slug}</Typography>
-
+      <CardContent sx={{ background: '#fff' }}>
+        <Typography
+          mb={1}
+          sx={{
+            overflow: 'hidden',
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
+          }}
+        >
+          {title}
+        </Typography>
+        <HorizontalCenteredBox
+          sx={{
+            gap: 0.4,
+            justifyContent: 'flex-start',
+          }}
+        >
+          <MediaIcon />
+          {info}
+        </HorizontalCenteredBox>
         <Divider />
-
-        <Typography>{info}</Typography>
-        <Divider orientation="vertical" />
-        <Typography>{extra}</Typography>
+        <Typography
+          sx={{
+            overflow: 'hidden',
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
+          }}
+        >
+          {extra}
+        </Typography>
       </CardContent>
     </Card>
   );
