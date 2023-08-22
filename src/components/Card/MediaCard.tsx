@@ -7,11 +7,11 @@ type Props = CardProps & {
   title: string;
   info?: string;
   extra?: string;
-  icon?: React.ElementType | React.ComponentType;
+  icon?: React.ElementType;
 };
 
 export function MediaCard({ photo, title, extra, info, icon, ...restProps }: Props) {
-  const MediaIcon = icon;
+  const MediaIcon = icon as React.ElementType;
 
   return (
     <Card {...restProps}>
