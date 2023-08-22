@@ -7,6 +7,7 @@ import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { CategoryList } from '@/components/CategoryList';
 import { DetailDrawer } from '@/components/DetailDrawer';
+import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
 
 type Props = InventoryItem;
 
@@ -34,7 +35,7 @@ export const Inventory = () => {
           categories={[{ name: '全部', category: 'all' }, ...(categories || [])]}
           selectedCategory={selected}
           onClick={onClickCategory}
-          sx={{ m: 6 }}
+          sx={{ mt: 6, mb: 3, ml: 6 }}
         />
 
         <CardList>
@@ -45,8 +46,10 @@ export const Inventory = () => {
               photo={`inventory/food/${o.photo}.png`}
               slug={String(o.stack)}
               info="取得處"
+              icon={ModeStandbyIcon}
               extra={o.droppedBy?.map((i) => i.name).join(', ')}
               onClick={() => onClickItem(o)}
+              sx={{ maxHeight: 190, maxWidth: 152 }}
             />
           ))}
         </CardList>
