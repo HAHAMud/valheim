@@ -11,7 +11,7 @@ import {
   MenuItem,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Logo from '@/assets/valheim_logo.png';
+import Logo from '/valheim_logo.png';
 import { navbarItems } from '@/module/navbar';
 import { NavbarItemsType } from '@/module/navbar/type';
 
