@@ -3,7 +3,7 @@
     "name": "烏鴉",
     "nameEN": "烏鴉",
     "photo": "烏鴉",
-    "primary_spawn": "黑森林",
+    "primary_spawn": [{ "name": "黑森林" }],
     "base_hp": "1",
     "notes": "Flies away when approached",
     "category": "passive creatures"
@@ -12,7 +12,7 @@
     "name": "鹿",
     "nameEN": "鹿",
     "photo": "鹿",
-    "primary_spawn": "草原, 黑森林",
+    "primary_spawn": [{ "name": "草原" }, { "name": "黑森林" }],
     "base_hp": "10",
     "notes": "Flees when approached",
     "category": "passive creatures"
@@ -21,7 +21,7 @@
     "name": "魚",
     "nameEN": "魚",
     "photo": "魚",
-    "primary_spawn": "海洋",
+    "primary_spawn": [{ "name": "海洋" }],
     "base_hp": "n/a",
     "notes": "Can be picked up when above water",
     "category": "passive creatures"
@@ -30,7 +30,7 @@
     "name": "海鷗",
     "nameEN": "海鷗",
     "photo": "海鷗",
-    "primary_spawn": "草原, 黑森林, 平原",
+    "primary_spawn": [{ "name": "草原" }, { "name": "黑森林" }, { "name": "平原" }],
     "base_hp": "1",
     "notes": "Flies away when approached",
     "category": "passive creatures"
@@ -39,7 +39,7 @@
     "name": "利維坦",
     "nameEN": "利維坦",
     "photo": "利維坦",
-    "primary_spawn": "海洋",
+    "primary_spawn": [{ "name": "海洋" }],
     "base_hp": "n/a",
     "notes": "40 HP per Abyssal barnacle",
     "category": "passive creatures"
@@ -48,7 +48,7 @@
     "name": "野兔",
     "nameEN": "野兔",
     "photo": "野兔",
-    "primary_spawn": "迷霧之地",
+    "primary_spawn": [{ "name": "迷霧之地" }],
     "base_hp": "10",
     "notes": "Flees when approached",
     "category": "passive creatures"
@@ -57,7 +57,7 @@
     "name": "雞",
     "nameEN": "雞",
     "photo": "雞",
-    "primary_spawn": "None",
+    "primary_spawn": [],
     "base_hp": "10",
     "notes": "Only spawning by hatching Egg",
     "category": "passive creatures"
@@ -66,7 +66,7 @@
     "name": "母雞",
     "nameEN": "母雞",
     "photo": "母雞",
-    "primary_spawn": "None",
+    "primary_spawn": [],
     "base_hp": "80",
     "notes": "Replaces Chicken when it grows up",
     "category": "passive creatures"
