@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query';
 import { getInventoryItems } from '@/api/inventory.api';
-import { Category } from '@/module/inventory';
+import { Category } from '@/module/category';
 
 export const useGetInventoryItems = (category: Category | null) => {
   const { data = [], ...rest } = useQuery([getInventoryItems.name], () => getInventoryItems());

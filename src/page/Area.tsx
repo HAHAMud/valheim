@@ -1,8 +1,8 @@
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { useGetAreas } from '@/hooks';
 import { AreaItemsType } from '@/module/area/type';
-import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 
 type Props = AreaItemsType;
 

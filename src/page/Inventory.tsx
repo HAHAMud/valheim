@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Box, Stack } from '@mui/material';
-import { Category, InventoryItem } from '@/module/inventory/types';
+import { InventoryItem } from '@/module/inventory/types';
+import { Category } from '@/module/category/types';
 import { useStoreActions } from '@/store';
 import { useGetCategories, useGetInventoryItems } from '@/hooks';
 import { MediaCard, CardList } from '@/components/Card';
