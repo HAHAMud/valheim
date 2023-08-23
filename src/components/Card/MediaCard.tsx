@@ -3,7 +3,7 @@ import { HorizontalCenteredBox } from '../Box';
 
 type Props = CardProps & {
   photo: string;
-  slug: string;
+  slug?: string;
   title: string;
   info?: string;
   extra?: string;

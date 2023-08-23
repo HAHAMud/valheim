@@ -13,7 +13,7 @@ export const Area = () => {
 
   return (
     <CardList>
-      {areaItems.map(({ name, photo, boss, ...restArea }: Props) => (
+      {areaItems.map(({ name, photo, boss }: Props) => (
         <MediaCard
           key={name}
           title={name}
@@ -22,7 +22,6 @@ export const Area = () => {
           info="boss"
           icon={LocalFireDepartmentIcon}
           sx={{ maxHeight: 280, width: 320 }}
-          {...restArea}
         />
       ))}
     </CardList>
