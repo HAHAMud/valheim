@@ -16,8 +16,6 @@ export const Creatures = () => {
   const [selected, setSelected] = useState<Category | null>('all');
   const { setBear } = useStoreActions();
   const { isFetching: isCategoriesLoading, data: categories } = useGetCreatureCategories();
-  console.log('🚀 ~ Creatures ~ categories:', categories);
-
   const { isFetching, data: items = [] } = useGetCreatures(selected);
 
   const onClickCategory = (category: Category) => {
@@ -45,7 +43,7 @@ export const Creatures = () => {
             <MediaCard
               key={o.name}
               title={o.name}
-              photo={`creatures/passive creatures/${o.photo}.png`}
+              photo={`creatures/${o.category}/${o.photo}.png`}
               info="取得處"
               icon={ModeStandbyIcon}
               extra={o.primary_spawn?.map((i) => i.name).join(', ')}
