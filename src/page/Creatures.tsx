@@ -44,7 +44,7 @@ export const Creatures = () => {
               key={o.name}
               title={o.name}
               photo={`creatures/${o.category}/${o.photo}.png`}
-              info="取得處"
+              info="出沒地點"
               icon={ModeStandbyIcon}
               extra={o.primary_spawn?.map((i) => i.name).join(', ')}
               onClick={() => onClickItem(o)}
