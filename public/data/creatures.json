@@ -70,5 +70,651 @@
     "base_hp": "80",
     "notes": "Replaces Chicken when it grows up",
     "category": "passive creatures"
+  },
+  {
+    "name": "野豬",
+    "nameEN": "Boar",
+    "photo": "Boar",
+    "primarySpawn": [
+      {
+        "name": "草原"
+      }
+    ],
+    "baseHP": "10",
+    "baseDamage": "10 Blunt",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Afraid of fire",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "蜥蛙",
+    "nameEN": "Neck",
+    "photo": "Neck",
+    "primarySpawn": [
+      {
+        "name": "草原"
+      }
+    ],
+    "baseHP": "5",
+    "baseDamage": "6 Slash",
+    "weakness": "Fire",
+    "resistance": "Poison",
+    "notes": "Afraid of fire",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "灰子嗣",
+    "nameEN": "Greyling",
+    "photo": "Greyling",
+    "primarySpawn": [
+      {
+        "name": "草原"
+      }
+    ],
+    "baseHP": "20",
+    "baseDamage": "5 Slash",
+    "weakness": "Fire",
+    "resistance": "Poison",
+    "notes": "Avoids fire",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "灰矮人",
+    "nameEN": "Greydwarf",
+    "photo": "Greydwarf",
+    "primarySpawn": [
+      {
+        "name": "黑森林"
+      }
+    ],
+    "baseHP": "40",
+    "baseDamage": "14 Slash, 10 Blunt",
+    "weakness": "Fire",
+    "resistance": "Poison",
+    "notes": "Avoids fire",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "灰矮人蠻徒",
+    "nameEN": "Greydwarf brute",
+    "photo": "Greydwarf brute",
+    "primarySpawn": [
+      {
+        "name": "黑森林"
+      }
+    ],
+    "baseHP": "150",
+    "baseDamage": "30 Slash",
+    "weakness": "Fire",
+    "resistance": "Poison",
+    "notes": "",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "灰矮人薩滿",
+    "nameEN": "Greydwarf shaman",
+    "photo": "Greydwarf shaman",
+    "primarySpawn": [
+      {
+        "name": "黑森林"
+      }
+    ],
+    "baseHP": "60",
+    "baseDamage": "14 Slash, 30 Poison",
+    "weakness": "Fire",
+    "resistance": "Poison",
+    "notes": "Heals allies for 20 hp over 4 seconds",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "巨魔",
+    "nameEN": "Troll",
+    "photo": "Troll",
+    "primarySpawn": [
+      {
+        "name": "黑森林"
+      }
+    ],
+    "baseHP": "600",
+    "baseDamage": "60, 70, 50 Blunt",
+    "weakness": "Pierce",
+    "resistance": "Blunt",
+    "notes": "Can destroy all trees, stone, and ores",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "鬼魂",
+    "nameEN": "Ghost",
+    "photo": "Ghost",
+    "primarySpawn": [
+      {
+        "name": "墓室"
+      }
+    ],
+    "baseHP": "60",
+    "baseDamage": "25 Slash",
+    "weakness": "Spirit",
+    "resistance": "Blunt, Pierce, Slash",
+    "notes": "No drops",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "骷髏",
+    "nameEN": "Skeleton",
+    "photo": "Skeleton",
+    "primarySpawn": [
+      {
+        "name": "黑森林"
+      }
+    ],
+    "baseHP": "40",
+    "baseDamage": "25 Slash, 20 Pierce",
+    "weakness": "Blunt, Fire",
+    "resistance": "Pierce, Poison",
+    "notes": "Spawns with a melee or ranged weapon",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "腐敗遺骸",
+    "nameEN": "Rancid remains",
+    "photo": "Rancid remains",
+    "primarySpawn": [
+      {
+        "name": "墓室"
+      }
+    ],
+    "baseHP": "100",
+    "baseDamage": "20 Blunt + 30 Poison",
+    "weakness": "Blunt, Fire",
+    "resistance": "Pierce, Poison",
+    "notes": "",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "Root",
+    "nameEN": "Root",
+    "photo": "Root",
+    "primarySpawn": [
+      {
+        "name": "長老"
+      }
+    ],
+    "baseHP": "20",
+    "baseDamage": "55 Blunt",
+    "weakness": "Fire",
+    "resistance": "Frost",
+    "notes": "",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "海蛇",
+    "nameEN": "Serpent",
+    "photo": "Serpent",
+    "primarySpawn": [
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "400",
+    "baseDamage": "70 Slash",
+    "weakness": "Frost",
+    "resistance": "Poison",
+    "notes": "Swims, only spawns at night or bad weather",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "憎惡之樹",
+    "nameEN": "Abomination",
+    "photo": "Abomination",
+    "primarySpawn": [
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "800",
+    "baseDamage": "60, 80, 80  Blunt",
+    "weakness": "Fire",
+    "resistance": "Blunt, Pierce",
+    "notes": "Can destroy all trees, stone, and ores",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "泥團",
+    "nameEN": "Blob",
+    "photo": "Blob",
+    "primarySpawn": [
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "50",
+    "baseDamage": "90 Poison",
+    "weakness": "Blunt, Frost, Lightning",
+    "resistance": "Fire, Pierce, Slash",
+    "notes": "Able to jump",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "沼泥怪",
+    "nameEN": "Oozer",
+    "photo": "Oozer",
+    "primarySpawn": [
+      {
+        "name": "草原"
+      },
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "150",
+    "baseDamage": "115 Poison",
+    "weakness": "Blunt, Frost, Lightning",
+    "resistance": "Fire, Pierce, Slash",
+    "notes": "Able to jump, splits into 2 Blobs when killed",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "屍鬼",
+    "nameEN": "Draugr",
+    "photo": "Draugr",
+    "primarySpawn": [
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "100",
+    "baseDamage": "48 Slash, 48 Pierce",
+    "weakness": "",
+    "resistance": "Fire",
+    "notes": "Spawns with a melee or ranged weapon",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "精銳屍鬼",
+    "nameEN": "Draugr elite",
+    "photo": "Draugr elite",
+    "primarySpawn": [
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "200",
+    "baseDamage": "58 Slash",
+    "weakness": "",
+    "resistance": "Fire",
+    "notes": "",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "螞蝗",
+    "nameEN": "Leech",
+    "photo": "Leech",
+    "primarySpawn": [
+      {
+        "name": "灰燼之地"
+      },
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "60",
+    "baseDamage": "20 Pierce + 70 Poison",
+    "weakness": "",
+    "resistance": "Poison",
+    "notes": "Swims",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "火靈",
+    "nameEN": "Surtling",
+    "photo": "Surtling",
+    "primarySpawn": [
+      {
+        "name": "沼澤"
+      }
+    ],
+    "baseHP": "20",
+    "baseDamage": "10 Poison + 40 Fire",
+    "weakness": "Frost",
+    "resistance": "",
+    "notes": "Takes 5 damage per tick while in water",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "怨靈",
+    "nameEN": "Wraith",
+    "photo": "Wraith",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "100",
+    "baseDamage": "60 Slash",
+    "weakness": "Fire, Spirit",
+    "resistance": "Blunt, Pierce, Slash",
+    "notes": "Flies, only spawns at night or inside abandoned houses",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "狼",
+    "nameEN": "Wolf",
+    "photo": "Wolf",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "80",
+    "baseDamage": "70 Slash",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Moves fast, spawns with stars only at night",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "幼龍",
+    "nameEN": "Drake",
+    "photo": "Drake",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "100",
+    "baseDamage": "90 Frost",
+    "weakness": "Fire",
+    "resistance": "",
+    "notes": "Shoots 3 ice spears",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "芬里爾之子",
+    "nameEN": "Fenring",
+    "photo": "Fenring",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "300",
+    "baseDamage": "85, 95 Slash",
+    "weakness": "Fire",
+    "resistance": "",
+    "notes": "Only spawns at night",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "石魔像",
+    "nameEN": "Stone Golem",
+    "photo": "Stone Golem",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "800",
+    "baseDamage": "110 Blunt, 110 Pierce",
+    "weakness": "Pickaxe",
+    "resistance": "Pierce, Slash",
+    "notes": "Can destroy trees and stone",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "蝙蝠",
+    "nameEN": "Bat",
+    "photo": "Bat",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "10",
+    "baseDamage": "20 Slash",
+    "weakness": "Fire, Spirit",
+    "resistance": "Blunt, Slash, Pierce",
+    "notes": "Flies, moves very fast",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "巨狼",
+    "nameEN": "Ulv",
+    "photo": "Ulv",
+    "primarySpawn": [
+      {
+        "name": "雪山"
+      }
+    ],
+    "baseHP": "50",
+    "baseDamage": "70 Slash",
+    "weakness": "Poison",
+    "resistance": "Fire",
+    "notes": "Only spawns inside Frost Caves",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "邪教徒",
+    "nameEN": "Cultist",
+    "photo": "Cultist",
+    "primarySpawn": [
+      {
+        "name": "平原"
+      }
+    ],
+    "baseHP": "200",
+    "baseDamage": "50 Fire, 75 Slash",
+    "weakness": "Poison",
+    "resistance": "Fire",
+    "notes": "Only spawns inside Frost Caves",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "殺人蚊",
+    "nameEN": "Deathsquito",
+    "photo": "Deathsquito",
+    "primarySpawn": [
+      {
+        "name": "平原"
+      }
+    ],
+    "baseHP": "20",
+    "baseDamage": "90 Pierce",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Flies, moves very fast",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "蜥牛",
+    "nameEN": "Lox",
+    "photo": "Lox",
+    "primarySpawn": [
+      {
+        "name": "平原"
+      }
+    ],
+    "baseHP": "1000",
+    "baseDamage": "130 Slash, 120 Blunt",
+    "weakness": "Fire",
+    "resistance": "Blunt, Frost, Slash",
+    "notes": "Can destroy trees and stone",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "綠皮鬼",
+    "nameEN": "Fuling",
+    "photo": "Fuling",
+    "primarySpawn": [
+      {
+        "name": "平原"
+      }
+    ],
+    "baseHP": "175",
+    "baseDamage": "85 Blunt / Pierce / Slash, 45 Blunt + 45 Fire",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Spawns with a melee or ranged weapon",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "綠皮鬼狂戰士",
+    "nameEN": "Fuling Berserker",
+    "photo": "Fuling Berserker",
+    "primarySpawn": [
+      {
+        "name": "平原"
+      }
+    ],
+    "baseHP": "800",
+    "baseDamage": "130 Blunt",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Can destroy trees and stone",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "綠皮鬼薩滿",
+    "nameEN": "Fuling shaman",
+    "photo": "Fuling shaman",
+    "primarySpawn": [
+      {
+        "name": "平原"
+      }
+    ],
+    "baseHP": "100",
+    "baseDamage": "100 Blunt, 20 Blunt + 100 Fire",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Can cast a protective shield over allies in an area.",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "贅生物",
+    "nameEN": "Growth",
+    "photo": "Growth",
+    "primarySpawn": [
+      {
+        "name": "海洋"
+      }
+    ],
+    "baseHP": "100",
+    "baseDamage": "45 Blunt + 50 Poison",
+    "weakness": "Blunt, Fire",
+    "resistance": "Frost, Pierce, Slash",
+    "notes": "Slows down player with Tarred.",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "追尋者",
+    "nameEN": "Seeker",
+    "photo": "Seeker",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "200",
+    "baseDamage": "90, 120 Pierce / 100 Blunt",
+    "weakness": "",
+    "resistance": "Blunt, Pierce, Slash",
+    "notes": "Flies to close with player",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "追尋者士兵",
+    "nameEN": "Seeker Soldier",
+    "photo": "Seeker Soldier",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "1500",
+    "baseDamage": "100, 120 Blunt / 100 Slash",
+    "weakness": "",
+    "resistance": "Blunt, Pierce, Slash",
+    "notes": "Weak point on abdomen",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "追尋者幼蟲",
+    "nameEN": "Seeker Brood",
+    "photo": "Seeker Brood",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "20",
+    "baseDamage": "60 Pierce",
+    "weakness": "",
+    "resistance": "Blunt, Pierce, Slash",
+    "notes": "",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "火山渣",
+    "nameEN": "Gjall",
+    "photo": "Gjall",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "1500",
+    "baseDamage": "50 Blunt + 80 Fire, 20 Blunt",
+    "weakness": "",
+    "resistance": "Fire",
+    "notes": "Flies, spawns Ticks, Weak point on underside",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "蜱蟲",
+    "nameEN": "Tick",
+    "photo": "Tick",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "50",
+    "baseDamage": "50 Pierce",
+    "weakness": "Pierce",
+    "resistance": "",
+    "notes": "Attaches to player to attack repeatedly",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "矮人盜賊",
+    "nameEN": "Dvergr rogue",
+    "photo": "Dvergr rogue",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "350",
+    "baseDamage": "110 Pierce / 70 Blunt",
+    "weakness": "",
+    "resistance": "",
+    "notes": "Neutral until provoked",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "矮人法師",
+    "nameEN": "Dvergr mage",
+    "photo": "Dvergr mage",
+    "primarySpawn": [
+      {
+        "name": "迷霧之地"
+      }
+    ],
+    "baseHP": "350",
+    "baseDamage": "70 Blunt / 100, 130 Fire / 150, 200 Frost",
+    "weakness": "",
+    "resistance": "Fire, Frost",
+    "notes": "Neutral until provoked, three variants (fire, frost, support) with different attacks, support mages buff their allies",
+    "category": "aggressive creatures"
   }
 ]
