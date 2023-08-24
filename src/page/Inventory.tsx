@@ -3,7 +3,7 @@ import { Box, Stack } from '@mui/material';
 import { InventoryItem } from '@/module/inventory/types';
 import { Category } from '@/module/category/types';
 import { useStoreActions } from '@/store';
-import { useGetCategories, useGetInventoryItems } from '@/hooks';
+import { useGetInventoryCategories, useGetInventoryItems } from '@/hooks';
 import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { CategoryList } from '@/components/CategoryList';
@@ -15,7 +15,7 @@ type Props = InventoryItem;
 export const Inventory = () => {
   const [selected, setSelected] = useState<Category | null>('all');
   const { setBear } = useStoreActions();
-  const { isFetching: isCategoriesLoading, data: categories } = useGetCategories();
+  const { isFetching: isCategoriesLoading, data: categories } = useGetInventoryCategories();
 
   const { isFetching, data: items = [] } = useGetInventoryItems(selected);
 
