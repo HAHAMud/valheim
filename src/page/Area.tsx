@@ -1,8 +1,8 @@
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { useGetAreas } from '@/hooks';
 import { AreaItemsType } from '@/module/area/type';
-import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 
 type Props = AreaItemsType;
 
@@ -13,7 +13,7 @@ export const Area = () => {
 
   return (
     <CardList>
-      {areaItems.map(({ name, photo, boss, ...restArea }: Props) => (
+      {areaItems.map(({ name, photo, boss }: Props) => (
         <MediaCard
           key={name}
           title={name}
@@ -22,7 +22,6 @@ export const Area = () => {
           info="boss"
           icon={LocalFireDepartmentIcon}
           sx={{ maxHeight: 280, width: 320 }}
-          {...restArea}
         />
       ))}
     </CardList>

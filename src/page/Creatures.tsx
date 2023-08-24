@@ -1,23 +1,24 @@
 import { useState } from 'react';
 import { Box, Stack } from '@mui/material';
-import { InventoryItem } from '@/module/inventory/types';
+import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
+import { Creature } from '@/module/creature/types';
 import { Category } from '@/module/category/types';
 import { useStoreActions } from '@/store';
-import { useGetInventoryCategories, useGetInventoryItems } from '@/hooks';
+import { useGetCreatureCategories, useGetCreatures } from '@/hooks';
 import { MediaCard, CardList } from '@/components/Card';
 import Loading from '@/components/Loading';
 import { CategoryList } from '@/components/CategoryList';
 import { DetailDrawer } from '@/components/DetailDrawer';
-import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
 
-type Props = InventoryItem;
+type Props = Creature;
 
-export const Inventory = () => {
+export const Creatures = () => {
   const [selected, setSelected] = useState<Category | null>('all');
   const { setBear } = useStoreActions();
-  const { isFetching: isCategoriesLoading, data: categories } = useGetInventoryCategories();
+  const { isFetching: isCategoriesLoading, data: categories } = useGetCreatureCategories();
+  console.log('🚀 ~ Creatures ~ categories:', categories);
 
-  const { isFetching, data: items = [] } = useGetInventoryItems(selected);
+  const { isFetching, data: items = [] } = useGetCreatures(selected);
 
   const onClickCategory = (category: Category) => {
     setSelected((val) => (val === category ? null : category));
@@ -44,11 +45,10 @@ export const Inventory = () => {
             <MediaCard
               key={o.name}
               title={o.name}
-              photo={`inventory/food/${o.photo}.png`}
-              slug={String(o.stack)}
+              photo={`creatures/passive creatures/${o.photo}.png`}
               info="取得處"
               icon={ModeStandbyIcon}
-              extra={o.droppedBy?.map((i) => i.name).join(', ')}
+              extra={o.primary_spawn?.map((i) => i.name).join(', ')}
               onClick={() => onClickItem(o)}
               sx={{ maxHeight: 190, maxWidth: 152 }}
             />

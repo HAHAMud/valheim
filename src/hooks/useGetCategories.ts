@@ -1,6 +1,10 @@
 import { useQuery } from 'react-query';
-import { getCategories } from '@/api/inventory.api';
+import { getInventoryCategories, getCreatureCategories } from '@/api/category.api';
 
-export const useGetCategories = () => {
-  return useQuery(getCategories.name, getCategories);
+export const useGetInventoryCategories = () => {
+  return useQuery(getInventoryCategories.name, getInventoryCategories);
+};
+
+export const useGetCreatureCategories = () => {
+  return useQuery(getCreatureCategories.name, getCreatureCategories);
 };

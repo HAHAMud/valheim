@@ -1,9 +1,4 @@
-export type Category = 'all' | 'food';
-
-export interface CategoryType {
-  name: string;
-  category: Category;
-}
+import { Category } from '@/module/category';
 
 const obtainMethods = ['collect', 'killBoss', 'killMob', 'fish', 'cook', 'unknown'] as const;
 // const droppedBy = ['barbecue grill', 'cast iron pan', 'unknown'] as const;
