@@ -1,6 +1,14 @@
 [
   {
-    "name": "生物",
+    "name": "溫馴生物",
     "category": "passive creatures"
+  },
+  {
+    "name": "攻擊性生物",
+    "category": "aggressive creatures"
+  },
+  {
+    "name": "Bosses",
+    "category": "bosses"
   }
 ]
