@@ -1,5 +1,5 @@
 import { Button, ButtonGroup, ButtonGroupProps } from '@mui/material';
-import { Category, CategoryType } from '@/module/inventory/types';
+import { Category, CategoryType } from '@/module/category/types';
 
 type Props = {
   categories?: CategoryType[];
